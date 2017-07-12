@@ -1,0 +1,90 @@
+(function() {
+
+  var whitelist = function(){
+    return true;
+    //return /fr\/connexion\/virements-services\/rib/.test(document.location.pathname);
+  };
+
+  var isPriority = function () {
+    var infoClient = sessionStorage.getItem('info_client');
+
+    if (!infoClient) { return false; }
+    try{return JSON.parse(infoClient).data.indicateurs.indicPriority;}catch(e){return false;}
+  };
+
+  // General switches
+  var isProdActivated = function () {
+    return sessionStorage.getItem("dtm-Activated") === 'false' ? false : (sessionStorage.getItem("dtm-Activated") === 'true' || /** COMMUTATOR **/ whitelist() /** DO NOT REMOVE**/) || isPriority();
+  };
+
+  var isStagingActivated = function() {
+    return sessionStorage.getItem("dtm-Activated") === 'false' ? false : (sessionStorage.getItem("dtm-Activated") === 'true' || /** COMMUTATOR **/ whitelist() /** DO NOT REMOVE**/) || isPriority();
+  };
+
+  var dtmHost;
+  var script;
+  var scripts = {
+    SelfHosted: {
+      PREVIEW: '/rsc/contrib/script/dtm/d122cc2652677fff54494c415efa41a45b0164bc/satelliteLib-cf28a06dbec8714383fde6faf0a3733075fff226.js',
+      PROD: '/rsc/contrib/script/dtm/d122cc2652677fff54494c415efa41a45b0164bc/satelliteLib-cf28a06dbec8714383fde6faf0a3733075fff226.js'
+    },
+    Akamai: {
+      PREVIEW: 'https://assets.adobedtm.com/d122cc2652677fff54494c415efa41a45b0164bc/satelliteLib-cf28a06dbec8714383fde6faf0a3733075fff226-staging.js',
+      PROD: 'https://assets.adobedtm.com/d122cc2652677fff54494c415efa41a45b0164bc/satelliteLib-cf28a06dbec8714383fde6faf0a3733075fff226.js'
+    }
+  };
+  var mode = GetURLParameter('mode');
+
+  var isEnv = function(strToTest) { return window.ENVIRONNEMENT && window.ENVIRONNEMENT === strToTest };
+  var isMode = function(mode) { return (window.GetURLParameter && GetURLParameter("mode") === mode) };
+  var getTimestamp = function() { var now = Date.now(); return now - now % (15 * 60 * 1000) };
+  var injectSync = function(e, t, r) {
+      return ! function(e, t, r) {
+          function n() { for (; d[0] && "loaded" == d[0][f];) c = d.shift(), c[o] = !i.parentNode.insertBefore(c, i) }
+          for (var s, a, c, d = [], i = e.scripts[0], o = "onreadystatechange", f = "readyState"; s = r.shift();) a = e.createElement(t), "async" in i ? (a.async = !1, e.head.appendChild(a)) : i[f] ? (d.push(a), a[o] = n) : e.write("<" + t + ' src="' + s + '" defer></' + t + ">"), a.src = s
+      }(document, "script", r)
+  };
+
+  if (typeof mode !== 'undefined') {
+    var modes = mode.split('|');
+    for (var m in modes) {
+      switch (modes[m]) {
+        case 'dtm-Activated':
+          sessionStorage.setItem('dtm-Activated', true);
+          break;
+
+        case 'dtm-Deactivated':
+          sessionStorage.setItem('dtm-Activated', false);
+          break;
+
+        case 'dtm-Akamai':
+          sessionStorage.setItem('dtm-Akamai', true);
+          break;
+
+        default:
+          break;
+      }
+    }
+  }
+
+  dtmHost = sessionStorage.getItem('dtm-Akamai') === 'true' ? 'Akamai' : 'SelfHosted';
+
+  if (!isEnv("PROD") && !isEnv("PREVIEW") && !isEnv("QUALIF")) { return false; } // Returns if we're not on an "approved" environment ("PREVIEW" & "QUALIF" & "PROD" only)
+  else if (!isProdActivated() && isEnv("PROD")) { return false; }
+  else if (!isStagingActivated() && (isEnv("PREVIEW") || isEnv("QUALIF"))) { return false; }
+  else { script = (isEnv("PROD") || isMode("PROD")) ? scripts[dtmHost].PROD : scripts[dtmHost].PREVIEW; }
+
+  // Load the header and footer code into the <head> and <body> tags
+  if (script) {
+      window.addEventListener('load', function() {
+        _satellite.notify("******************************", 3);
+        _satellite.notify("EVENT LOAD", 3);
+        if (typeof _satellite.pageBottomFired === 'undefined' || !_satellite.pageBottomFired) {
+          _satellite.pageBottom();
+          if (dtmHost === 'Akamai') { _satellite.setDebug(true); }
+          _satellite.notify('--> Satellite footer code loaded <--');
+        }
+      });
+      injectSync(document, "script", [script]);
+  }
+})();

@@ -1,0 +1,2268 @@
+﻿/*********************************************************************************************************************************************************************************/
+/******************************************************** RANGER AU FUR ET A MESURE DANS LES FICHIERS SCSS ******************************************************************/
+/*********************************************************************************************************************************************************************************/
+body.client #mainContent{ min-height: 680px;} 
+body.client.bpf #mainContent{ min-height: 600px;background-color:#e8ded4}
+
+/* END correction UDC*/
+/* END cle digitale - masquer pour qques semaines - nouvelle classe .link-disabled   */
+body.bpf 
+body.bpf .link-disabled {
+  opacity: 1;
+}
+body.bpf .disabled-disabled-bpf {
+  opacity: 0.5;
+}
+body.bpf .onglet-nav.nav-retour,
+body.bpf .onglet-nav.special-onglet-nav {
+  margin-bottom: 0px;
+}
+body.bpf.mw-1400 .onglet-nav {
+  width: 100%;
+  max-width: 1260px;
+  margin-top:-1px;
+}
+body.bpf header .onglet-nav {
+  margin-bottom: 0px;
+}
+body.bpf .no-preview {
+  display: none;
+}
+/*probleme hover onglets*/
+
+body.bpf .actions-rapides .degrade-hover:hover i {
+    background-position: center bottom;
+}
+
+body.bpf .header-page.has-onglet {
+    margin-top: 48px;
+}
+
+body.bpf div.zoneContent.abonnements div.blocksOp ul li.step1 ul.stepContent li ul li.block-option div.block-container div.state input[type="radio"]:checked + label:before {
+  color: #42382f;
+  border: 1px solid #42382f;
+}
+
+/*gellules*/
+body.bpf header .onglet-nav ul.onglet {
+  background-color: transparent;
+  padding: 0px;
+}
+body.bpf header ul.onglet li {
+  margin: 16px 16px 16px 0;
+}
+body.bpf header .onglet-nav ul.onglet li a {
+  padding: 5px 15px;
+  border-radius:  15px 15px 15px 15px;
+  -moz-border-radius: 15px 15px 15px 15px;
+  -webkit-border-radius: 15px 15px 15px 15px;
+}
+body.bpf header .onglet-nav ul.onglet li a:hover {
+  color: #CDAE6E;
+  background-color: #FFF;
+}
+/*pour les ancres*/
+
+body.bpf #wcm-l-nav-dynacaap header .onglet-nav ul.onglet li a {
+  color: #42382F;
+  background-color: #FFF;
+}
+
+body.comptes-contrats.bpf .onglet.sous-section li a, 
+body.bpf .onglet.sous-section li a {
+    padding:  5px 15px;
+}
+
+
+body.bpf.new-nav .onglet.sous-section {
+  margin-left: 12px;
+}
+body.bpf.client .header-page h2 {
+  margin-bottom: 20px;
+}
+
+
+body.bpf.new-nav .header-page .actions-rapides .white-box {
+  margin-top: 20px;
+}
+body.bpf .actions-rapides .white-box:hover {
+  background-color: #CDAE6E;
+}
+body.bpf .actions-rapides .white-box:hover h3 {
+  color : #fff;
+}
+
+.no-preview {
+  display : block;
+}
+
+/* ancien supprimer
+body.comptes-contrats .onglet li, body .onglet li {
+  margin: 12px 25px 12px -11px;
+  }*/
+  /* et remplacer par : */
+
+body.bpf.comptes-contrats #wcm-l-nav-udc ul.onglet li,
+body.bpf ul.onglet li {
+  margin: 11px 0;
+}
+
+/*couleurs bpf chang�s*/
+body.bpf .onglet li a {
+  text-transform: uppercase;
+}
+
+body.bpf .onglet.sous-section li a:hover {
+  background-color: #fff;
+  color: #CDAE6E ;
+  border-radius:  15px 15px 15px 15px;
+  -moz-border-radius: 15px 15px 15px 15px;
+  -webkit-border-radius: 15px 15px 15px 15px;
+}
+body.bpf .onglet.sous-section li a.active {
+  background-color: #fff;
+}
+body.bpf .header-page .onglet li a.active {
+  color: #42382F;
+  background-color: #fff;
+}
+body.bpf  .header-page .onglet li a {
+  color: #fff;
+}
+
+/*detachement et onglets*/
+body.bpf  #wrapper-strategie-privee .onglet-bi-etat2 {
+  margin-top: 20px;
+  border-top: 1px solid #F3EEE9;
+  border-left: 1px solid #F3EEE9;
+  border-right: 1px solid #F3EEE9;
+}
+
+body.bpf #wcm-l-mes-abonnements .nav-retour {
+  display: none;
+}
+
+/*cosmetique*/
+
+/* UDC CARTES - tableau cartes*/
+body.bpf .udc.cartes .udc-ligne-titre h4 {
+  line-height: 50px;
+}
+/* bordeure bizarre dans UDC!!!!*/
+
+body.bpf.comptes-contrats .list-vue1>li:hover .row.main span.folder-btn , 
+body.bpf .list-vue1>li:hover .row.main span.folder-btn  {
+  border-bottom: 0px solid transparent;
+}
+
+body.bpf .udc.cartes h4 {
+  margin: 0;
+}
+
+/*rop*/
+body.bpf .header-select .dropdown-header .btn-select {
+  top: 31px;
+}
+/* CW */
+body.bpf .magazine-body .agenda-container {
+  top: 320px;
+}
+body.bpf.new-nav #wcm-l-nav-udcartes h2, 
+body.bpf.new-nav #wcm-l-sub-nav-vcd h2 {
+  top: 0px;
+}
+/* exemple : page https://prev-m-wev1s1-apv1s1.canalnet-bpf.bnpparibas.net/fr/espace-prive/virements-services/autorisation-de-prelevement */
+/* si le h2 siove le .wrap  */
+body.bpf .wrap.white-list > form >h2 {
+      margin: 0;
+}
+/* END exemple : page https://prev-m-wev1s1-apv1s1.canalnet-bpf.bnpparibas.net/fr/espace-prive/virements-services/autorisation-de-prelevement */
+body.bpf #header-rib .close.rib {
+  display: none;
+}
+body.bpf .header-strategie-privee .onglet-nav .list-outils {
+  display: none;
+}
+body.bpf.new-nav .header-page.no-gellules {
+  margin-bottom: 0;
+}
+
+body.bpf.new-nav .header-page.has-quick-access.no-gellules {
+  margin-bottom: 90px;
+}
+body.bpf .wrapper-commande-chequier.wrap {
+  background-color: transparent;
+}
+
+body.bpf #nav9-aide a:hover span:before,
+body.bpf #nav9-aide.selected a span:before ,
+body.bpf #nav9-aide:hover a span:before {
+  color: #494949;
+}
+
+body.bpf #dropdown-container-choix-compte .libelle, 
+body.bpf #dropdown-container-choix-compte .light-grey {
+    padding-left: 20px;
+}  
+
+/*page contact calages*/
+
+body.bpf .new-nav-gelly {
+position: relative;
+background: transparent none repeat scroll 0% 0%;
+top: 0px;
+}
+body.bpf .new-nav-gelly .onglet-pagination { display: none;}
+
+/*body.bpf .header-page.has-onglet,*/
+body.bpf .container-contact .header-page.has-onglet,
+body.bpf.comptes-contrats .header-page.has-onglet {
+  margin-top: 55px!important;/*desole mais c'est du JS qui le surcharge inutilement - bonnes regles a appliquer*/
+}
+
+/*reglementaton*/
+body.bpf .header-page.has-onglet.special {
+    margin-top: -9px;
+}
+
+/*capsules contact*/
+/* surcharge du JS on ne sait pas pourquoi le JS ajoute le display block!!?? */
+body.bpf.client .container-contact #nav-dec {
+  display: block!important;
+}
+body.bpf .container-contact #nav-dec {
+  display: none!important;
+}
+/* END surcharge du JS on ne sait pas pourquoi le JS ajoute le display block!!?? */
+body.bpf.client #wcm-l-contact .container-contact .onglet.ancres {
+  width: auto;
+  overflow: visible;
+  background-color: transparent;
+  padding: 10px 23px;
+}
+body.bpf.client .container-contact .onglet.ancres li {
+  background-color: transparent;
+}
+body.bpf.client .container-contact .onglet.ancres li a{
+  margin: 5px;
+  padding: 5px 15px;
+  background-color: #FFF;
+  color: #685648;
+  border-radius: 15px;
+  text-transform: uppercase;
+  border-radius:  15px 15px 15px 15px;
+  -moz-border-radius: 15px 15px 15px 15px;
+  -webkit-border-radius: 15px 15px 15px 15px;
+} 
+body.bpf.client .container-contact .onglet.ancres li a:hover{
+  background-color: #FFF;
+  color: #CDAE6E;
+} 
+
+/*section contact*/
+
+body.bpf .container-contact .sections {
+    padding-top: 0px;
+} 
+
+body.bpf .container-contact .list-outils {
+  display: none;
+}
+/*REMPMACER DIRECTEMENT DANS SCSS*/
+body.bpf .container-ident .form .reset-input {
+  top: 33px;
+}
+body.bpf.comptes-contrats .info-totaux .col-50, 
+body.bpf .info-totaux .col-50 {
+  width: 50%;
+}
+
+/* pour https://prev-m-wev1s1-apv1s1.canalnet-bpf.bnpparibas.net/fr/banque-contact/nous-contacter */
+
+body.bpf .container-contact #nav.onglet-nav {
+      background-color: transparent;
+      top: 146px;
+}
+
+.new-nav .wrap.tel-op.tel-op1 {
+  /*ajouter cette regle*/
+  overflow: hidden;
+}
+/*icone meteo pour bpf */
+
+body.bpf .udc .meteo {
+  display: none;
+}
+/* pareil nettoyer dans blessed*/
+body.bpf .header-page h2,
+body.bpf .header-page h1 {
+    margin : 2rem 0rem 0rem!important; /*surcharge d'un code degueulasse dans blessed*/
+}
+
+/* pour tester padding header brun*/
+
+body.bpf .wrapper-dynacaap .header-page,
+body.bpf #wrapper-strategie-privee .header-page.header-strategie-privee {
+    padding: 2rem 2rem 0px;
+}
+
+/*  pour https://prev-m-wev1s1-apv1s1.canalnet-bpf.bnpparibas.net/fr/espace-prive/comptes-et-contrats/mes-contrats*/
+body.bpf.comptes-contrats .header-select, 
+body.bpf .header-page {
+    min-height: 112px;
+}
+body.bpf .header-select.has-gellules, 
+body.bpf .header-page.has-gellules {
+    min-height: 154px;
+}
+
+body.bpf header.header-page-contact-bpf {
+    min-height: 162px;
+}
+body.bpf header.header-page-contact-bpf h2{
+      margin: 3rem 0rem 0rem!important;/*surcharge d'un code degueulasse dans blessed*/
+}
+
+
+/*page contact /cookies et autres onglets */
+body.bpf #wrapper-cookies,
+body.bpf #wrapper-infos-leg{
+  margin-top: 50px;
+}
+
+body.bpf #wrapper-cookies h2,
+body.bpf #wrapper-infos-leg h2 {
+  padding: 4rem 40px 20px 26px;
+  min-height: 116px;
+}
+
+/* cercle wealth header*/
+
+body.bpf .magazine-body > section.bandeau > .wrapper-contenu .header-page {
+    padding-bottom: 20px;
+}
+
+
+/*proble fil ariane a enlever dans blessed 
+body.client .no-subnav .wcm-fil-ariane-header, body.client .wcm-fil-ariane-header {
+    top: 72px;
+} 
+ou remplacer par
+*/
+body.bpf.new-nav .onglet-container .onglet li a {
+  font-size: 14px;
+  padding: 22px;
+  display: inline !important;
+}
+
+/* header synthese patrimoniale sans comptes et contrats - agrandir l'espace entre 2 onglets et le titre */
+body.bpf .info-totaux {
+  margin-top: 10px;
+}
+body.bpf .header-synthese-pat h1 {
+      padding-left: 28px;
+}
+/*fil d'ariane avec menu*/
+body.bpf.client .wcm-fil-ariane-header {
+  top: 65px;
+}
+/*fil d'ariane sans menu*/
+
+body.bpf.client.no-subnav .wcm-fil-ariane-header,
+body.bpf.no-subnav .wcm-fil-ariane-header, 
+body.bpf .wcm-fil-ariane-header.fil-ariane-sans-menu {
+  top: 12px; 
+}
+body.comptes-contrats .onglet li a.only-preview,
+body.bpf .onglet li a.only-preview {
+  display: none;
+}
+
+body.comptes-contrats .onglet li a.bpf-only, 
+body.bpf .onglet li a.bpf-only {
+  padding: 0px;
+} 
+
+/* contenu homogene */
+/*  pour https://prev-m-wev1s1-apv1s1.canalnet-bpf.bnpparibas.net/fr/espace-prive/comptes-et-contrats/mes-contrats */
+body.bpf .wrapper-assurances {
+    background-color: transparent; /*suppriume le bg jaune*/
+}
+body.bpf #id_balise_div .onglet {
+  background-color: transparent;  
+}
+
+
+body.bpf .tuile-nav>ul h2 {
+  margin: 1rem 2% 0;
+}
+
+/* dans  https://prev-m-wev1s1-apv1s1.canalnet-bpf.bnpparibas.net/fr/espace-prive/virements-services/virements/virement-permanent  */
+/* supprimer me bg jaune de wrappper virement*/
+body.bpf .wrapper-virement {
+    background-color: transparent;
+}
+
+
+/*  synthese patrimoniale - detacher le block recherche*/
+
+body.bpf .barre-recherche .list-vue li {
+  height: 50px;
+  width: 50px;
+  margin: 0 0 20px 20px;
+  border-right: 1px solid #E6DED3;
+}
+
+/*  UDC Mes cartes - detacher le block recherche*/
+body.bpf #ia-udcarte .barre-recherche {
+  padding-top: 20px;
+}
+
+/*page le cercle wealth*/
+body.bpf .magazine-body .barre-recherche #date-filter {
+    height: 50px;
+    line-height: 50px;
+    width: calc(100% - 40px);
+    margin : 0 20px;
+}
+body.bpf .magazine-body .barre-recherche .agenda-button {
+    height: 50px;
+    line-height: 14px;
+}
+
+/* sctoll to top*/
+body.bpf .scroll-to-top-btn, body.part .scroll-to-top-btn {
+  display: none;
+  font-size: 4rem;
+  color: #CCCCCC;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  z-index: 999;
+  -ms-transform: rotate(90deg); 
+  -webkit-transform: rotate(90deg); 
+  transform: rotate(90deg);
+}
+
+body.bpf .backToTopDivCont {
+  display: none!important; /* temporaire - a supprimer une fois .backToTopDivCont est effac� du code*/
+}
+
+/* new nav */
+.bpf-only-nav {
+  display: none;
+}
+
+body.bpf .bpf-only-nav {
+  display: inline-block;
+}
+
+/**************** END les + partout *****************************/
+
+
+/**************** CLE DIGIT VIDEO *****************************/
+body.bpf.cle-digitale .video-js {
+  margin: 0 auto;
+} 
+
+/**************** END CLE DIGIT VIDEO *****************************/
+
+/**************** VIREMEJNT mobile *********************************/
+@media screen and (max-width: 768px) {
+    body.bpf .header-page.has-onglet {
+      margin-top: 0;
+    }
+    body.bpf.client .header-page h2 {
+      margin: 0!important;
+    }
+     body.bpf .header-page.has-gellules {
+       min-height: auto;
+     }
+     body.bpf #virement-unitaire-etape1 .list-fav .folder-btn:before   {
+      height: 65px;
+     }
+     body.bpf #virement-unitaire-etape1 .list-fav .folder-btn .icon-carret-down,
+      body.bpf #virement-unitaire-etape1 .list-fav .folder-btn .icon-carret-up {
+       right: .2rem;
+     }
+}
+
+/******************************** END BARRE RECHERCHE NEW NAV - END**************************/
+
+/******************************** CORRECTIONS CONTENT **************************/
+/* pour nos-solutions-dediees/services-bancaires-au-quotidien/cartes-et-moyens-de-paiement/paylib*/
+/* cacher le block documentation bientot disponible*/
+body.bpf #fp_outilsSim.level2.fp-style-carte {
+  display: none;
+}
+
+/***************************END** CORRECTIONS CONTENT **************************/
+
+/*correction bpf analyses reco finance*/
+#doc-analyse .col-55 {
+    width: 52%;
+}
+
+/*********************************************************************************************************************************************************************************/
+/******************************************************** END RANGER AU FUR ET A MESURE DANS LES FICHIERS SCSS - END*********************************************************/
+/*********************************************************************************************************************************************************************************/
+
+
+body.bpf.new-nav .onglet-container .onglet li a.part-only {display: none !important;}
+body.bpf .white-box {background-color: #fff;}
+
+
+
+/* ajout jerome 12-04 */
+#virement-historique .actions-rapides.header-actions { 
+  display: none; 
+} 
+/* END ajout jerome 12-04 */
+.bottom-header-connected .logoBNP-container { width: calc(100% - 315px); }
+/* Permet de masquer temporairement dans le menu avec gelules du rop pro les entr�es caracteristiques et autour de vous */
+
+body.pro a[href="#rop-caracteristiques"],
+body.pro a[href="#zone-publiable-basse-accueil"] {
+    display: none;
+}
+
+/* Permet de masquer le menu avec gellules du rop pro contenu dans l'application */
+
+body.pro .pro-style ul.onglet {
+    display: none;
+}
+
+/* Permet de ne pas tomber sur le cas de menu cach� */
+.menuStable{
+top: 70px !important;
+}
+
+/* Action rapide effectuer un virement dans rop pro > permet d'afficher la bonne icone alors que la classe dans l'appli n'est pas la bonne */
+
+body.pro .wrapper-rop-1 ul.actions-rapides li.action-virement i.icon-printer {
+    background: url(/rsc/contrib/image/generique/actions-rapides/faire-virement.png);
+    background-position: center 0;
+    height: 50px;
+    width: 50px;
+}
+
+
+/* messagerie */
+
+div#ocnet_vide .xml-section level1 {display: inline-block;}
+#ocnet_vide p{text-align: center;}
+
+#wrapper-ocnet-confirmation div.level1:nth-of-type(2), #wrapper-ocnet-fonctionnalites div.level1:nth-of-type(2), #wrappper-push-produits div.level1:nth-of-type(2) {
+    padding: 20px 20px 70px 30px;
+}
+
+#wrappper-produit div.level1 div.level2 div.level3 div.level4:first-of-type div.level5 p span.ocnet-textWhite-big {text-align: left;}
+
+#wrappper-push-produits div.level1:nth-of-type(2) { padding: 20px 0px 70px;}
+#wrappper-push-produits .level1:nth-of-type(2) .level2 ul li a { text-decoration : none}
+#wrappper-push-produits div.level1 p.oc-net-infos { padding: 20px 25px 20px 75px;}
+.container-message .body-msg p { padding: 5px 0; text-align: initial;}
+#wrapper-ocnet-confirmation div.level1:last-of-type, #wrapper-ocnet-confirmation div.level1:nth-of-type(2) { padding: 0 10px;}
+#wrappper-produit div.level1 div.level2 div.level3 div.level4 { padding: 35px 30px 35px 30px;}
+
+#wrappper-push-produits .level1:nth-of-type(2) .level2 ul li span.onglet-assurance { background-color: #E3514B; color: #fff; border-radius: 25px; padding: 2px 21px; }
+#wrappper-push-produits .level1:nth-of-type(2) .level2 ul li span.onglet-bourse { background-color: #2491EE; color: #fff; border-radius: 25px; padding: 2px 21px; }
+#wrappper-push-produits .level1:nth-of-type(2) .level2 ul li span.onglet-carte { background-color: #5DC66A; color: #fff; border-radius: 25px; padding: 2px 21px; }
+#wrappper-push-produits .level1:nth-of-type(2) .level2 ul li span.onglet-compte { background-color: #5DC66A; color: #fff; border-radius: 25px; padding: 2px 21px; }
+#wrappper-push-produits .level1:nth-of-type(2) .level2 ul li span.onglet-credit { background-color: #993BA7; color: #fff; border-radius: 25px; padding: 2px 21px; }
+#wrappper-push-produits .level1:nth-of-type(2) .level2 ul li span.onglet-epargne { background-color: #2491EE; color: #fff; border-radius: 25px; padding: 2px 21px; }
+#wrappper-push-produits .level1:nth-of-type(2) .level2 ul li span.onglet-mobile { background-color: #D262A5; color: #fff; border-radius: 25px; padding: 2px 21px; }
+#wrappper-push-produits .level1:nth-of-type(2) .level2 ul li span.onglet-protection { background-color: #FE9B0A; color: #fff; border-radius: 25px; padding: 2px 21px; }
+
+#wrappper-push-produits .level1:nth-of-type(2) .level2 ul li.fp-complement-assurance { border-color: #E3514B; }
+#wrappper-push-produits .level1:nth-of-type(2) .level2 ul li.fp-complement-bourse { border-color: #2491EE; }
+#wrappper-push-produits .level1:nth-of-type(2) .level2 ul li.fp-complement-carte { border-color: #5DC66A; }
+#wrappper-push-produits .level1:nth-of-type(2) .level2 ul li.fp-complement-compte { border-color: #5DC66A; }
+#wrappper-push-produits .level1:nth-of-type(2) .level2 ul li.fp-complement-credit { border-color: #993BA7; }
+#wrappper-push-produits .level1:nth-of-type(2) .level2 ul li.fp-complement-epargne { border-color: #2491EE; }
+#wrappper-push-produits .level1:nth-of-type(2) .level2 ul li.fp-complement-mobile { border-color: #D262A5; }
+#wrappper-push-produits .level1:nth-of-type(2) .level2 ul li.fp-complement-protection { border-color: #FE9B0A; }
+
+#wrappper-produit div.level1 div.level2 div.level3 div.level4:first-of-type div.level5 p span.ocnet-textWhite-medium{font-size: 3rem;}
+
+#wrappper-produit div.level1 div.level2 div.level3 div.level4:first-of-type div.wcm-image { width: 18%;}
+#wrappper-produit div.level1 div.level2 div.level3 div.level4:first-of-type div.level5 p:last-of-type {padding-left: 15px;}
+
+#wrappper-push-produits .level1:nth-of-type(2) .level2 ul li a { width: 100%; }
+
+#double-bouton a { padding-right: 15px; }
+
+#double-bouton p > span.btn-primary {
+    color: #212121;
+    text-decoration:none;
+}
+
+#wrappper-produit div.level1 div.level2 div.level3 div.level4:last-of-type p span.btn-secondary {
+    color: #212121;
+}
+
+.container-message .body-msg a {
+    text-decoration: none;
+}
+
+#wrappper-produit div.level1 div.level2 div.level3 div.level4:last-of-type p span.btn-primary {
+    margin: 0;
+}
+
+div.ec-messagerie > p.table-border .table-striped {
+    padding: 10px;
+}
+
+/* OC NET Voyages � la carte */
+#voyages-alacarte .btn-primary, #voyages-alacarte a.btn-primary {
+    text-transform: none;
+}
+
+/* zones publiables CIFPEA */
+#peacif #zonePubliableHauteStep1,
+#peacif #zonePubliableBasseStep1,
+#peacif #zonePubliableHauteStep2,
+#peacif #zonePubliableBasseStep2,
+#peacif #zonePubliableHauteStep3,
+#peacif #zonePubliableBasseStep3,
+#peacif #zonePubliableHauteStep4,
+#peacif #zonePubliableBasseStep4,
+#peacif #zonePubliableHauteStep5,
+#peacif #zonePubliableBasseStep5,
+#peacif #zonePubliableHauteStep6,
+#peacif #zonePubliableBasseStep6 {display: none;}
+
+/* meg masque bouton comparer */
+.meg .avantages a.btn-.compareButton {
+display: none;
+}
+
+/*affichage de l'icon print si body.print*/
+
+.print .list-outils a.icon-print {display: inline-block; }
+.print .list-outils {width: 90px;}
+.print  .site-size-container{
+    right: 100px;
+    top: 25px;
+}
+
+/*fixes udc temp*/
+#wcm-l-nav-udc{height:0;}
+
+
+/*fixes rop*/
+div#showGrapMob{
+    display: none;
+}
+
+/* dispatch */
+#wcm-l-page-dispatch section.wrap.dispatch > .row.no-mob > .col-3 { width: 45%; }
+
+
+.rop-wrapper .header-select .infos {
+margin-top: -15px;
+}
+
+/* hide QA export excel
+#ActionsRapides .rop-actions .white-box.action-releve {display: none;}*/
+
+
+/* menu avec gellules udcartes*/
+
+body.pro ul.onglet #mesCartes,
+body.pro #ia-udcarte ul.onglet li:nth-child(2),
+body.pro #ia-udcarte ul.onglet li:nth-child(3) {
+    display:none;
+}
+
+
+/*fix udc header*/
+.header-udc .info-totaux span.no-mob{display: none;}
+
+
+/*fix udc-mosaique*/
+
+.list-vue3 li{padding-top:1rem}
+
+.list-vue3 .udc-liquidite .a-venir:after {
+    content: "";
+    background-image: url(/rsc/contrib/image/particuliers/udc/avenir-sprite.png);
+    height: 60px;
+    width: 63px;
+    left: 0;
+    top: 2rem;
+    margin-left: 30px;
+    position: absolute;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.udc h4.udc-lib{margin-top:2.5rem}
+span.icon +  h4.udc-lib{margin-top:0;}
+
+/*fix udc quick access */
+
+ /*.pro .qa-fam1-masquer,
+ .qa-fam3-masquer,
+ .qa-fam567-masquer,
+ .qa-fam89-masquer,
+ .qa-fam5-masquer,
+ .qa-fam6-masquer,
+ .qa-fam7-masquer,
+ .qa-fam8-masquer,
+ .qa-fam9-masquer {display:none;}*/
+
+
+
+.udc-ajouter-compte{display:none !important;}
+
+
+.list-vue3 .udc-liquidite .a-venir.op-positif:after {background-position: center top; }
+.list-vue3 .udc-liquidite .a-venir.op-negatif:after {background-position: center center; }
+
+/** Popin CP deconnexion **/
+
+/*body div.castor-popin { z-index: 201; }
+body div.castor-content.castor-height-500 > div { padding-top: 50px !important; }
+
+body div.castor-popin div.castor-content.castor-height-500{
+width:90%;
+max-width:1000px;
+}
+
+body div.castor-popin div.castor-content div p { margin: 0; }
+body div.castor-popin div.castor-content div a.castor-button.castor-one {
+    width: 120px;
+    text-align: center;
+ }
+
+body #container-popin-construction div.castor-content.castor-height-500 > div { padding-top: 100px !important; }
+
+
+*/
+
+
+/*Virements*/
+ #virement-permanent-etape4 {
+    padding-bottom: 120px;
+}
+
+/*fix udc assurrances*/
+
+.wrapper-assurances .doquickAction{display:none:}
+
+
+/*fix bpf bottom-header-connected palie absence de recherche*/
+ .bpf .bottom-header-connected .logoBNP-container{ width: calc(100% - 315px); }
+
+
+
+/*fix bpf une-des-carte*/
+/*.bpf .udc.cartes .js-detail-toggle>.row-border:nth-child(4),
+.bpf .udc.cartes .js-detail-toggle>.row-border:nth-child(5),
+.bpf .udc.cartes .js-detail-toggle>.row-border:nth-child(6),
+.bpf .udc.cartes .js-detail-toggle>.row-border:nth-child(7){display: none;}*/
+
+.bpf.preview .votre-magazine,.bpf.preview #mon-agenda,.bpf.preview .mes-favoris{
+display:block;
+}
+
+/* fix bpf pour dossier fiscal 2015 */
+/*div.contenu-dossier-fiscal {padding:27px;}
+fp_faq > div.contenu-dossier-fiscal > ul
+.table-border.contenu-dossier-fiscal {padding:10px;}
+.table-striped {color:#F5F5F5; /* #fff; }*/
+
+
+/*fixes responsive*/
+@media screen and (max-width : 768px) {
+
+    /*ident*/
+
+    #identLayer .message-erreur{
+        min-height: 0;
+        padding-top: 0;
+
+    }
+
+    .barre-recherche.js-expand .key-word-search { display:none;}
+    /*rop*/
+    .rop-wrapper .header-select .dropdown-header .editable-container,
+    div#showGrapMob{display:none;}
+
+    .list-rop .rop-montant{width: inherit; text-align: inherit; padding-left: inherit;}
+    .list-rop .rop-montant>.positif{text-align: inherit; display: inherit;}
+    .list-rop .rop-detail.col-60{width: 80%;}
+
+
+    /* on masque l'entree demat dans virement en mode mobile*/
+    #nav3-virement-services-child-li7{display: none;}
+
+    /*udc*/
+
+    /*en attenant relivraison du bon code par les sous-traitants
+    .barre-recherche.js-expand.br-udc{padding-left: 0;}
+    .barre-recherche.js-expand.br-udc .key-word-search{display: none}
+    .barre-recherche.js-expand.br-udc .filtre-tri{
+        width: 100%;
+    }*/
+
+/*virement*/
+
+    #goto-virement-beneficiaire{display: none;}
+    #virement-historique #btn-rech{font-size: 0;}
+
+
+    /*popin castor et polux*/
+
+    .castor-content.castor-vertically-horizontally-centered.castor-height-500{
+        width: 300px;
+        background-position: center top;
+    }
+
+    div.castor-popin div.castor-content > .castor-column-6{
+        width: 80%;
+    }
+
+    div.castor-popin div.castor-content div.castor-checkbox input[type=radio]:not(old) + label{
+    line-height: 1;
+    min-height:25px;
+    }
+
+    #deconnexion_appli .col-50.level3 div>img{height:400px;}
+
+    /* home
+    #content_accueil_part_3 div { right: 0; top: 50%; width: 44%; left: 55%; } */
+    #content_accueil_part_3_large_banner div > img{ margin-left: -17%; }
+   /* div.item.active p.conditions-offre {
+        color: #FFF;
+        position: absolute;
+        padding: 0px 10px 70px 25px;
+        bottom: -3px;
+        text-shadow: 0px 0px 2px #000, 1px 1px 10px #000;
+        font-size: 0.9em;
+    }*/
+
+/* new icons footer inutile  corrig�  dans les bases.css  */
+
+    /*.icones-footer-contact-bddf li .rond-cross-footer .icon.icon.icon-calepin { font-size: 2rem; margin: 0px; position: absolute; color: #FFF; top: 29%; width: auto; height: auto; display: block; }
+    .icones-footer-contact-bddf li .rond-cross-footer .icon.icon-localisation { font-size: 2rem; margin: 0px; position: absolute; color: #FFF; top: 29%; width: auto; height: auto; display: block; }
+    .icones-footer-contact-bddf li .rond-cross-footer .icon.icon-appli { font-size: 2rem; margin: 0px; position: absolute; color: #FFF; top: 29%; width: auto; height: auto; display: block; }*/
+
+
+}
+
+/* homepage */
+
+/* ul.nav-cross-footer {
+    display: none;
+} */
+
+/* changement icones du footer part ---> copier dans bases.css  */
+/*div.icones-footer-contact-bddf span.icon.icon-calepin{ color: #212121; font-size: 4rem; margin: 33px 0px; display: inline-block; width: 5rem; height: 4rem; }
+div.icones-footer-contact-bddf span.icon.icon-localisation{ color: #212121; font-size: 4rem; margin: 33px 0px; display: inline-block; width: 5rem; height: 4rem; }
+div.icones-footer-contact-bddf span.icon.icon-appli{ color: #212121; font-size: 4rem; margin: 33px 0px; display: inline-block; width: 5rem; height: 4rem; }*/
+.icones-footer-contact-bddf span.footer-title-descr { text-transform: none; margin-bottom: 0.7em; display: inline-block; }
+
+
+
+/* Cache bouton voir d�mo dans autorisation pr�l�vement */
+#ia-sepawl .header-page .transparent-btn { display: none; }
+
+@-webkit-keyframes bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0.0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes bouncedelay {
+  0%, 80%, 100% {
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 40% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+/* fix fp_popin IE9 */
+
+body.mw-1920 .fp_popin {width:1920px\9;}
+body.mw-1600 .fp_popin {width:1600px\9;}
+body.mw-1400 .fp_popin {width:1400px\9;}
+@media screen and (max-width: 1400px) {
+    body.mw-1920 .fp_popin, body.mw-1600 .fp_popin, body.mw-1400 .fp_popin {width:100%\9;}
+}
+
+/* hide ZP commande ch�quier */
+#zone-publiable-haute-commande-etape1, #zone-publiable-basse-commande-etape1, #zone-publiable-haute-commande-etape2, #zone-publiable-basse-commande-etape2, #zone-publiable-haute-commande-etape3, #zone-publiable-basse-commande-etape3, #zone-publiable-haute-historique, #zone-publiable-basse-historique {display:none;}
+
+
+/* taille par d�faut = 1400 */
+.bottom-header, .bottom-header-connected, .ls-canvas { max-width: 1400px;}
+body.mw-1400 .ls-canvas, body.mw-1400 .bottom-header, body.mw-1400 .bottom-header-connected { max-width: 1400px;}
+body.mw-1600 .ls-canvas, body.mw-1600 .bottom-header, body.mw-1600 .bottom-header-connected { max-width: 1600px;}
+body.mw-1920 .ls-canvas, body.mw-1920 .bottom-header, body.mw-1920 .bottom-header-connected { max-width: 1920px;}
+
+
+
+/* correction affichage tooltip fiche fond versement r�gulier */
+.link-fiche-fond-pdf .help-text-popup {min-width: 450px;} 
+
+/* Masquer les montants mes documents */
+.container-mes-documents .wrapper-mes-documents .dropdown-container .montant-vir{display:none;}
+
+/* mefav - cacher barre obsol�te remont�e par l'outil */
+#id_balise_div .onglet.assurance-vie {display: none;}
+
+
+/* suppression bouton plus de d�tails sur Esprit libre d�tail contrat */
+#ia-espritlibre #goToUDCC { display:none;}
+
+
+/* Bouton t�l�charger le relev� */
+#downloadReleveRop {
+    border: solid 1px #CCC;
+    border-left: none;
+    height: 60px;
+    padding: 15px 0 0 0;
+    text-align: center;
+}
+.recherche-rop-avenir #downloadReleveRop {
+    border-left: solid 1px #CCC;
+}
+
+#downloadReleveRop .icon-download-alt {
+    font-size: 25px;
+    color: #787878;
+}
+.recherche-rop .key-word-search { width:20%; }
+.recherche-rop-avenir .key-word-search {width: 40%;}
+
+@media screen and (max-width: 768px) {
+.recherche-rop .filtre-tri { width: 40%; }
+}
+
+/* On cache le crayon erreur de script */
+.rop-wrapper .header-page .icon-stylo {display: none;}
+.header-pro .editable-container .icon-stylo {display:none;}
+
+
+/*Modif priority */
+
+.titre-priority-actus-header h2 { text-shadow: 0px 0px 2px #000, 1px 1px 10px #212121; }
+.titre-priority-actus-header p { text-shadow: 0px 0px 2px #000, 1px 1px 10px #212121; }
+.priority #wrapper-priority-offres div.level1:nth-of-type(2) div.level2:nth-of-type(1) div.level3.table-cell:first-child { width: 30%; }
+
+/*Modif Bons Plans */
+
+/* Fix pour l'image large des fiches infos Bons Plans */
+.wrapper-bon-plan .carousel .main-pic.visuel-bp img {
+    transform: translateY(-7%);
+    -ms-transform: translateY(-7%); /* IE 9 */
+    -webkit-transform: translateY(-7%); /* Chrome, Safari, Opera */
+}
+
+/* Fix pour le texte des fiches infos Bons Plans */
+.wrapper-bon-plan .carousel .avantage-promo { font-size: 2.2rem; }
+.wrapper-bon-plan .carousel .caption-bp .date-promo { text-transform: none; }
+div.caption-bp h4.neutre { color:#212121; }
+div.caption-bp span.neutre { color:#212121; }
+
+/* fix pour la page pr�f�rence client */
+#wrapper-gabarit-libre div.level2 .level3.gl-section-presentation3 p:first-of-type span.icon.icon-express-ppc{ font-size: 4.5rem;}
+#wrapper-gabarit-libre div.level2 .level3.gl-section-presentation3 p:first-of-type span.icon.icon-conseil-ppc{ font-size: 4.5rem; }
+#wrapper-gabarit-libre div.level2 .level3.gl-section-presentation3 p:first-of-type span.icon.icon-projets-ppc{ font-size: 4.5rem; }
+div#plus_service h2 { color: #e64444; }
+#wrapper-gabarit-libre div.level2 .level3.gl-section-presentation3 p.plus-service { clear: both; color: #e64444; }
+#wrapper-gabarit-libre div.level2 .level3.gl-section-presentation3 p:first-of-type span.icon.icon-bulle1{ font-size: 3rem; color: #e64444; padding-right: 5px; }
+div#plus_expertise h2 { color: #007867; }
+#wrapper-gabarit-libre div.level2 .level3.gl-section-presentation3 p.plus-expertise { color: #007867; }
+#wrapper-gabarit-libre div.level2 .level3.gl-section-presentation3 p:first-of-type span.icon.icon-releve{ font-size: 3rem; color: #007867; padding-right: 5px; }
+div#plus_transparence h2 { color: #afafaf; }
+#wrapper-gabarit-libre div.level2 .level3.gl-section-presentation3 p.plus-transparence { color: #afafaf; }
+#wrapper-gabarit-libre div.level2 .level3.gl-section-presentation3 p:first-of-type span.icon.icon-relevesCessions{ font-size: 3rem; color: #afafaf; padding-right: 5px; }
+div#plus_connectees h2 { color: #5dc66a; }
+#wrapper-gabarit-libre div.level2 .level3.gl-section-presentation3 p.plus-connectees { color: #5dc66a; }
+#wrapper-gabarit-libre div.level2 .level3.gl-section-presentation3 p:first-of-type span.icon.icon-visio{ font-size: 3rem; color: #5dc66a; padding-right: 5px; }
+#wrapper-gabarit-libre div.level2 .level3.gl-section-presentation3 p:first-of-type span.icon.icon-tablette{ font-size: 3rem; color: #5dc66a; padding-right: 5px; }
+#wrapper-gabarit-libre div.level2 .level3.gl-section-presentation3 p:first-of-type span.icon.icon-wifi{ font-size: 3rem; color: #5dc66a; padding-right: 5px;  }
+
+/*Modif BPF */
+
+div.level1.fpbpf_header div.fpbpf_quicknav ul li.fp-quickaccess{display:none}
+
+/* Livret jeune */
+[display=none] { display: none }
+
+
+#wcm-l-tsmb-en-pratique{height:1515px;}
+
+/* Correction affichage de la popin messagerie */
+#popuplength {-moz-box-shadow: 0px 0px 5px 0px #656565;-webkit-box-shadow: 0px 0px 5px 0px #656565;-o-box-shadow: 0px 0px 5px 0px #656565;box-shadow: 0px 0px 5px 0px #656565;filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, Strength=5);}
+#popupLength a.close{float:right;}
+#popupLength .popover-content {text-align:center;}
+#popupLength .popover-content p{display:inline-block; padding-left:1%;}
+#popupLength .cercle {background-color: #e64444; background-image: linear-gradient(#e64444, #d30072); border-radius: 50%; color: #fff; font-family: arial; font-size: 50px; font-weight: 700; height: 70px; line-height: 1.3; padding: 3px 0 0; text-align: center; width: 70px;}
+
+/* Quick access cartes */
+[qa-key="documents"],
+[qa-key="soucription"],
+[qa-key="effectuerRetrait"] { display: none; }
+
+/* quick access Déclarer sinistre rétabli pour Mes assurances retabli pour MOBILEO et BNP SeCURITE
+
+#template-liste-assurance [id="00010"],
+#template-liste-assurance [id="00007"] { display: none; }
+
+#template-liste-assurance .type-NOM [id="00010"] ,
+ #template-liste-assurance .type-NOM [id="00007"],
+  #template-liste-assurance .type-BSE [id="00007"] { display:block} */
+
+/* fix pour pages cr�dits conso */
+div#wrapper-hub-offre-col100 p.fp-mentions-big{font-size:1.5em; padding: 0 10px;}
+
+/* fix banni�re vente flash BAQ */
+div#wrapper-hub-offre-col50 div.level2.fpbpf_headerTop p>span{font-family:bnpp_sans_condensed_light,Arial,sans-serif;font-size:2em;text-transform:uppercase;line-height:1.3em;}
+span.venteflash{font-size:2.8em;font-weight:bold;}
+span.venteflash-gras{font-size:2.5em;font-weight:bold;}
+div#wrapper-hub-offre-col50 div.level2.fpbpf_headerTop a{display:inline-block;margin-top:2rem;color:#fff;}
+div#wrapper-hub-offre-col50 div.level2.fpbpf_headerTop span a{color:#fff;padding:5px 25px;}
+div#wrapper-hub-offre-col100 span.pointer.btn-primary a{color:#fff;padding:5px 25px;}
+/*p.conditions-offre{color:#fff;position:absolute;padding:0px 10px 0 25px;bottom:-3px;text-shadow: 0px 0px 2px #000, 1px 1px 10px #000;}*/
+/*div#zp_prets_personnels p { color: #212121; }*/
+div#zp_assurances_biens p.conditions-offre { padding: 0 10px; }
+
+/* Liens vert dans FAQ */
+#fp_faq ul li > span.underline > a { color : #1B9B5B; }
+
+/* fiche informationnelles - souscrire */
+div#fp_infosSouscrire h3 { color: #5DC66A; font-size: 3rem;}
+
+/* fiche informationnelle - colonne de droite */
+.colonne-contact.v2.spe-info { padding: 0px 10px; }
+
+#choix-prevoyance h1 {
+    margin: 0.5em 0px 0px;
+    font-size: 4.13333rem;
+    color: #fff;
+    position: absolute;
+    top: 30px;
+    left: 168px;
+}
+
+#choix-prevoyance img {
+    width: 100%;
+}
+
+#wcm-l-diagnostic-prevoyance #colonneContactContainer { margin-top:0; }
+
+#wrapper-gabarit-libre div.table-cell.recla { padding: 0 30px 0 0; text-align: justify; }
+#wrapper-gabarit-libre h1 { margin: 0.5em 0px 0px; }
+#wrapper-gabarit-libre div.level2.gl-header-corporate .level3 h1, #wrapper-gabarit-libre-bpf div.level2.gl-header-corporate .level3 h1 {
+    margin: 0.5em 0px 0px;
+}
+
+#wrapper-gabarit-libre h3 span:first-child.numerosverts {
+    display: inline-block;
+    font-weight: 600;
+    float: left;
+    margin-right: 1.33333rem;
+    border: 2px solid #1B9B5B;
+    padding-top: 3px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #1B9B5B;
+    width: 2.8rem;
+    height: 2.8rem;
+}
+
+#wrapper-gabarit-libre h3 span:first-child.numerosmarrons {
+    display: inline-block;
+    font-weight: 600;
+    float: left;
+    margin-right: 1.33333rem;
+    border: 2px solid #CDAE6E;
+    padding-top: 3px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #CDAE6E;
+    width: 2.8rem;
+    height: 2.8rem;
+}
+
+#recla01 { padding-bottom: 10px; }
+#recla02 { padding-bottom: 10px; }
+
+#wrapper-gabarit-libre #recla01 h3 { line-height: normal; }
+#wrapper-gabarit-libre #recla02 h3 { line-height: normal; }
+#wrapper-gabarit-libre #recla03 h3 { line-height: normal; }
+
+/* fiche informationnelles - eco-dico */
+#wrapper-gabarit-libre div.level2 .level3.gl-section-categorie2 div.table-cell:nth-of-type(2) { width: 44%; padding-left: 40px; }
+#wrapper-gabarit-libre p.infos-videos-eco { width: 70%; text-align: justify; padding: 0px; min-height: 0px; }
+
+/* fiche produit fin commercialisation */
+div#fp_offres p.btn-primary { width: 20%}
+div#fp_offres p.btn-primary > a { color: #fff;}
+
+/* fiche produit avec banni�re jeu */
+div#fp_jeu { clear: both; padding: 15px 25px; }
+div.fp-jeu-fond-assurance { background-color: #EEBC09; background-image: linear-gradient(360deg, #ED973C, #EE5842); }
+div.fp-jeu-fond-bourse { background-color: #1EC7F2; background-image: linear-gradient(360deg, #1EC7F2, #2279E0); }
+div.fp-jeu-fond-epargne { background-color: #1EC7F2; background-image: linear-gradient(360deg, #1EC7F2, #2279E0); }
+div.fp-jeu-fond-protection { background-color: #EEBC09; background-image: linear-gradient(360deg, #EEBC09, #FE9B0A); }
+div.fp-jeu-fond-mobile { background-color: #D262A5; background-image: linear-gradient(360deg, #D262A5, #A5406B); }
+div.fp-jeu-fond-carte { background-color: #5DC66A; background-image: linear-gradient(360deg, #5DC66A, #1C9F5D); }
+div.fp-jeu-fond-compte { background-color: #5DC66A; background-image: linear-gradient(360deg, #5DC66A, #1C9F5D); }
+
+div#fp_jeu p.duree-offre { text-transform: uppercase; color: #FFF; position: absolute; top: 705px; right: 20rem; }
+div#fp_jeu p.duree-offre > span.icon-chrono { font-size: 2.45rem; padding: 8px; display: block; color: #fff; }
+div#fp_jeu p.venteflash { border-radius: 0; border: 2px solid #FFF; width: 25%; font-size: 1rem; color: #FFF; text-transform: uppercase; text-align: center; padding: 10px 20px; margin-bottom: 25px; }
+div#fp_jeu p.promo { border-right: 1px solid #fff; padding: 10px 20px; width: 25%; display: inline-block; }
+div#fp_jeu p.promo > span.promo { text-transform: uppercase; font-family: bnpp_sans_condensed_regular, Arial, sans-serif; color: #fff; line-height: 0.977em; font-size: 2.4rem; letter-spacing: 0.144rem; }
+div#fp_jeu p.promo > span.promo > span { text-transform: uppercase; font-size: 3.2rem; letter-spacing: 0.266rem; color: #fff; }
+div#fp_jeu p.ventedetails { color: #fff; padding: 6px 15px 20px 60px; font-size: 1.333rem; letter-spacing: 0.088rem; display: inline-block; }
+div#fp_jeu p.ventedetails > span { color: inherit; font-size: 1.844rem; }
+/* div#fp_jeu p { width : 50%;  text-align: center; padding-right: 27px; }*/
+div#fp_jeu p > span.btn-secondary.small a { color: #000; }
+
+div#fp_main_content > div#fp_offres p.duree-offre { text-transform: uppercase; color: #FFF; position: absolute; top: 710px; right: 20rem; }
+div#fp_main_content > div#fp_offres p.duree-offre-pro { text-transform: uppercase; color: #FFF; position: absolute; top: 768px; right: 20rem; }
+
+
+/* page charte et rapport de la m�diation bancaire */
+div#mediation_et_recours_judiciaire ul > li > ul > li { list-style-type: disc; }
+
+/* fiche informationnelles BAC / Rentr�e */
+#wrapper-gabarit-libre div.level2 .level3.gl-section-presentation2 p.fi-mentions-big { font-size:1.5em; }
+#wrapper-gabarit-libre div.level2 .level3 p.fi-mentions-big { font-size:1.5em; }
+#wrapper-gabarit-libre div.level3 .level4.gl-section-presentation3 h3 > span.fi-titre-couleur-vert { color: #1B9B5B; }
+#wrapper-gabarit-libre div.level3 .level4.gl-section-presentation2 h3 > span.fi-titre-couleur-vert { color: #1B9B5B; }
+#wrapper-gabarit-libre div.level2 .level3.gl-section-presentation2 p.fi-titre-couleur-vert { color: #1B9B5B; }
+#wrapper-gabarit-libre ul li > span.fi-titre-couleur-vert { color: #1B9B5B; }
+
+/* resize des images dans fiches informationnelles*/
+p#image_fi001, p#image_fi002, p#image_fi003, p#image_fi004, p#image_fi005, p#image_fi006 span>img{width:50%; margin:0 auto;}
+p#image_fi001 span.table-cell > span > img{width:52%;}
+
+/* fix pour fiche info PRO les imm�diates*/
+p#image_vehicule1 span>img{width:50%;}
+p#image_vehicule2 span>img{width:50%;}
+p#image_vehicule3 span>img{width:50%;}
+
+/* hide messages messagerie */
+/*[data-type="BONS_PLANS"], .flt-bp, .flt-sd, .info-msg {display: none;visibility: hidden;}
+.preview [data-type="BONS_PLANS"], .preview .flt-bp, .preview .flt-sd, .preview .info-msg {display: block;visibility: visible;}
+.machine [data-type="BONS_PLANS"], .machine .flt-bp, .machine .flt-sd, .machine .info-msg {display: block;visibility: visible;}*/
+
+
+
+/* table-border avec cellules color�es */
+.table-striped>tbody>tr:nth-of-type(odd){background-color:#e7e7e7;}
+.table-striped > tbody > tr > td { padding:10px; }
+
+/* table-border BPF avec cellules color�es */
+.table-striped-bpf>tbody>tr:nth-of-type(odd){background-color:#f5f1ed;}
+.table-striped-bpf > tbody > tr > td { padding:10px; }
+
+
+/* mentions l�gales pages produits */
+#fp_main_content #fp_presentation #fp_infos_carre p.fp-ml-carre {padding: 7px 10px;}
+
+/* cache boutons action sur histoppo */
+#ia_histoppo header .row.actions-rapides { display: none;}
+#ia_histoppo section.opo-historique h2 { font-size : 2rem;}
+
+/* sub nav HBC */
+header.hbc-releves, header.hbc-recherche, header.hbc-ordres, header.hbc-mouvements, header.hbc-opcvm { display: none}
+body.hbc-releves header.hbc-releves,
+body.hbc-recherche header.hbc-recherche,
+body.hbc-ordres header.hbc-ordres,
+body.hbc-mouvements header.hbc-mouvements,
+body.hbc-opcvm header.hbc-opcvm { display: block;}
+body.hbc-releves header.hbc-titres,
+body.hbc-recherche header.hbc-titres,
+body.hbc-ordres header.hbc-titres,
+body.hbc-mouvements header.hbc-titres,
+body.hbc-opcvm header.hbc-titres { display: none;}
+header.hbc-default { display:none;}
+body.bourse header.hbc-default { display:block;}
+
+/* chat text display */
+.mod-chat .message p { word-break: normal;}
+
+/* home fix */
+#accueil_particuliers .level2:first-of-type .slideHome {color: hsl(0, 0%, 100%);position: absolute;right: 10%;top: 20%;}
+#accueil_particuliers #content_accueil_part.graph > div .popover p {font-size: 1rem; line-height: 1rem; margin: 0; padding: 0;}
+
+/* NCI - pret immo fix */
+#form-demande-immo-etape-1 [name="frais_notaire"], #form-demande-immo-etape-1 [name="montant_achat_logement"] .help-text-container {display: none;}
+
+/* zones publiables banking */
+#voteAg #zonePubliableBasse, #voteAg #zonePubliableHaute {display: none;}
+.icon.icon-gammeOpcvm:before {content: "\e661"; }
+
+/* Messagerie */
+.js-number-unread-msg-recu { display: none; }
+.nb-messages .round-img { display: none; }
+.part .nb-messages .round-img,
+.bpf .nb-messages .round-img  { display: block;}
+
+.pro #bouton-nouveau-message, .pro #msg-envoye, .pro .list-filtre .flt-conseiller { display: none; }
+
+/* udc titres -> hide lien relev�s de cessions */
+.list-vue1.udc-titre .qa-fam4-revenus {display: none;}
+
+/* vcd */
+#vcd-caract-header-page .dropdown-container-header { display: none; }
+#vcd-caract-header-page .btn-select { display: none; }
+#vcd-caract-header-page .dropdown-container { cursor: initial; }
+
+/* Cache icon print dans visionneuse */
+#toolbar .icon-print { display: none; }
+
+#wapper-home-bpf #pourcDiv{width : 360px; position: absolute; right: 20px; color: #FFF; bottom: 100px; }
+#wapper-home-bpf #pourcDiv h2{font-size: 3.4rem;}
+#wapper-home-bpf #pourcDiv canvas{cursor:pointer; margin:0 5px 10px 0; float:left;}
+#wapper-home-bpf #pourcDiv > div{position: relative;}
+#wapper-home-bpf #pourcDiv > div > p{position: relative; top: 5em;   text-shadow: 0 0 10px rgba(0, 0, 0, 1), 0 0 10px rgba(0, 0, 0, 1);}
+#wapper-home-bpf #pourcDiv .popover{color:#494949; bottom:-118px; left:-50px;}
+#wapper-home-bpf #pourcDiv .popover p{margin:0;}
+#wapper-home-bpf #pourcDiv .popover p span{color:#b2965d;}
+#wapper-home-bpf .xml-section.level2.bpf-home-header{overflow:visible;}
+
+@media screen and (max-width: 1100px) {
+    #wapper-home-bpf #pourcDiv{width:285px; bottom:auto; top:20px;}
+    #wapper-home-bpf #pourcDiv canvas{float:none;}
+    #wapper-home-bpf #pourcDiv div p{position: relative; top: 0;}
+}
+
+/*Correction des probl�mes BPF affichage top header */
+
+#topHeader {display: none;}
+
+
+
+.content .list- li{
+	display:block !important;
+}
+/* suppression double header MCS accessible */
+#ia-modifiercodesecret .header-page.has-onglet {display: none;}
+
+/* padding leonardo */
+#ia-leonardo {padding-top: 40px;background-color: hsl(0, 0%, 92%);}
+
+/* Popover */
+.popover { z-index: 202; }
+
+/* 3-col profil .col-3 {width: 30%;} --> cibler plus pr�cisement*/
+
+/*correction profil client*/
+#profilclient.profilClientActions{margin-top:60px}
+
+
+.bottom-header-connected.mobile-only .nb-messages .round-img { display: none; }
+
+/* gestion onglet nav MRH */
+#nav-ss-mrh{display: none;}
+body.modifVCD #nav-ss-mrh { display:block;}
+#id_balise_div > #ia-mrh {margin-top: -45px;}
+#ia-mrh .actions-rapides .white-box {height: 195px;}
+body.modifVCD #id_balise_div > #ia-mrh {margin-top: 0;}
+
+/* ocnet de changement BPF */
+p#pic0001, p#pic0002, p#pic0003, p#pic0004, p#pic0005, p#pic0006, p#pic0007, p#pic0008 span > img { width: 60px; padding-right: 10px; }
+p.gros { text-transform: uppercase; font-size: 1.3rem; }
+#ocnet-change > p.grostitre { color: #CDAE6E; font-size: 2.2222rem; text-transform: uppercase; }
+#ocnet-change > p.phrase1-bpf { text-transform: uppercase; font-size: 2rem; }
+#ocnet-change > p.phrase2-bpf::first-letter { text-transform: capitalize; color: #CDAE6E; font-size: 1.6666rem; }
+#ocnet-change > p.phrase2-bpf { color: #CDAE6E; font-size: 1.6666rem; }
+#ocnet-change > tbody > tr > td > p > span.btn-primary { width: 193px; }
+
+/* Ajustements popin */
+.popin-content .big.violet {padding: 15px 0;text-align: center;}
+.popin-navigateur-obsolete .list-navigateur {margin: 30px 0;}
+.popin .close {color: #bbb;float: right;}
+
+/* opacity grille ident */
+#ia-identification .field-password.off {opacity: 0.2;}
+#ia-identification .form-control {font-size: 2rem;padding: 10px 45px 6px 12px;}
+
+/* submit mobile number loader */
+.wrapper-mobile button.loader {width: 108px;}
+
+/* social network */
+div#socialnetwork .icon-twitter { font-size: 3rem; }
+div#socialnetwork .icon-facebook { font-size: 3rem; }
+
+/* fix message sur ost */
+.col-85 > div#message07 {display: none;}
+
+
+/* fix sur ost */
+#OST-step1 iframe{min-height:500px;}
+#OST-step1 .col-15 {
+    line-height: 1;
+    max-width: 100px;
+}
+
+#OST-step1 .col-15 .inputcontainer {
+    float: left;
+    margin-top: 15;
+    width: 30px;
+}
+
+#OST-step1 .col-15 p.pull-right{padding-top:5px;}
+
+
+/* fix page produit bouton vert */
+#fp_souscrire #fp_infosSouscrire p.btn-primary.forceColor > a {color: #fff;}
+#wrapper-gabarit-libre span.btn-primary.forceColor > a { color: #fff; }
+
+/* fix hub univers avec comparateur*/
+li#masque1, li#masque2 { display: none; }
+
+/* fix pour page contact */
+#ct-conseiller-en-ligne .wrapper-contact h3 {
+    text-transform: uppercase;
+}
+
+#ct-conseiller-en-ligne .wrapper-contact h3.white {
+    text-transform: none;
+    font-size: 20px;
+    font-family: bnpp_type_book;
+}
+
+#ct-conseiller-en-ligne .wrapper-contact .col-2 {
+    margin-bottom: 0;
+    border: 1px solid #DCDFE0;
+}
+
+/* hub univers avec un nombre de clic-image impair */
+div#wrapper-hub-vosbesoins-profils div.level2 div.level3.table-cell-expand {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+div#wrapper-hub-vosbesoins-profils div.level2.table-row.header-page > h1 { padding-left: 40px; }
+
+/* hide ZP messagerie */
+#zonePubliableHautMessagerieBPF, #zonePubliableHautMessageriePart, #zonePubliableHautMessageriePro { display: none;}
+
+.btn-secondary2:not([disabled]):hover {
+background-color: #f6f6f6;
+background-image: -webkit-linear-gradient(#f6f6f6,#fff);
+background-image: linear-gradient(#f6f6f6,#fff);
+}
+.btn-secondary2, a.btn-secondary2 {
+border: 1px solid #dbdbdb;
+border-bottom: solid 2px #dbdbdb;
+background-color: #fff;
+background-image: -webkit-linear-gradient(#fff,#f6f6f6);
+background-image: linear-gradient(#fff,#f6f6f6);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#f9f9f9', GradientType=0);
+}
+
+/* temp fix iframe height */
+#id_balise_div iframe {min-height: 500px;}
+
+/*mise en forme messages erreur ident */
+.identification_erreur_tech p {font-family: bnp_regular,Arial,sans-serif;font-size: 1.5rem;font-weight: normal;height: 100%;margin: 0;min-height: 600px;padding: 2rem 10rem 2rem 2rem;}
+
+/* hide editer RIB udc+rop */
+body.pro.comptes-contrats .rop-actions .action-rib, 
+body.bpf.comptes-contrats .rop-actions .action-demat, 
+body.bpf.comptes-contrats .rop-actions .action-rib,
+body.part.comptes-contrats .rop-actions .action-demat, 
+body.part.comptes-contrats .rop-actions .action-rib {display: block;}
+
+/*.white-box.qa-fam1-rib {display: none;}*/
+
+/** Pour tester le boutton laisser un avis en preview **/
+.preview [name=laisserAvis].hidden { display: block !important; visibility: visible !important; }
+
+/* fix LNA */
+#wcm-l-home-LNA #accueil_particuliers .level2{
+width: 100%;
+float: left;
+}
+
+/* Visuel paiement mobile*/
+#wrapper-gabarit-libre p#visuel-paiement-mobile span > img { width: auto; }
+
+@media screen and (max-width : 768px) {
+    #wrapper-gabarit-libre p#visuel-paiement-mobile span > img { width: 100%; }
+}
+
+/* fix pour btn dl pdf fi-net */
+p.fp-details-fullscreen {
+    display: none;
+}
+
+body.fp-credit p.fp-details-fullscreen {display: block;}
+body.fp-credit p.fp-details-fullscreen a {color: #fff;}
+
+/* fix flexilia */
+body.flexilia .wrapper-demande-pret .notification {display:none;}
+
+/* ajout du simulateur � la liste des outils sur les HUB */
+div#wrapper-hub-offre-col100 div.level1:nth-of-type(4) ul li span.simulateur-outils {
+    position: relative;
+    top: 5rem;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+.simulateur-outils{
+    background-position:center top;
+    display:inline-block;
+    background-repeat:no-repeat;
+    width:50px;
+    height:50px
+}
+
+.simulateur-outils{
+    background-image:url(/rsc/contrib/image/particuliers/outils/simulateur-outils.png)
+}
+
+/* cache pagination page contact connect� */
+body.ec-conseiller.client .onglet-pagination {display: none;}
+
+/* ROP - cache action demat + caract�ristiques */
+.rop-actions .action-demat {display: none;}
+
+/* fix pour article webzine avec banner large */
+div#illustration-bpf-large > .detail-article .xml-region img {
+    height: auto;
+    max-width: 100%;
+}
+/* fix cache barre gellules dans flexilia */
+body.flexilia #ia-capro .onglet {display: none;}
+
+/* template temporaire ocnet Noel */
+.wrapper-ocnet-noel header{/*background:url(/rsc/contrib/image/particuliers/oc-net/noel/header.png) center;*/height:188px;width:100%;background-size:cover}.wrapper-ocnet-noel .wrap{border-left:3px solid #E32D66;background-color:none;}.wrapper-ocnet-noel .wrap p{margin-top:0;border-left:none;background-color: none;}.wrapper-ocnet-noel .wrap .col-2{margin-bottom:35px}.wrapper-ocnet-noel .wrap .col-2:first-of-type .top{/*background:url(/rsc/contrib/image/particuliers/oc-net/noel/joaillerie.png) center;*/height:177px;background-size:cover;border:1px solid #e7e7e7;border-bottom:0}.wrapper-ocnet-noel .wrap .col-2:nth-of-type(2) .top{/*background:url(/rsc/contrib/image/particuliers/oc-net/noel/pret-a-porter.png) center;*/height:177px;background-size:cover;border:1px solid #e7e7e7;border-bottom:0}.wrapper-ocnet-noel .wrap .col-2:nth-of-type(2) .center p.promo{margin-top:36px}.wrapper-ocnet-noel .wrap .col-2:nth-of-type(3) .top{/*background:url(/rsc/contrib/image/particuliers/oc-net/noel/shop-museum.png) center;*/height:177px;background-size:cover;border:1px solid #e7e7e7;border-bottom:0}.wrapper-ocnet-noel .wrap .col-2:nth-of-type(4) .top{/*background:url(/rsc/contrib/image/particuliers/oc-net/noel/cosmetiques.png) center;*/height:177px;background-size:cover;border:1px solid #e7e7e7;border-bottom:0}.wrapper-ocnet-noel .wrap .col-2 .center{background-color:#FFF;border:1px solid #c4c4c4;text-align:left;border-top:0;padding:15px}.wrapper-ocnet-noel .wrap .col-2 .center h4{color:#e32d66;font-weight:700;margin-bottom:0;margin-top:0;padding-top:11px;text-transform: uppercase;}.wrapper-ocnet-noel .wrap .col-2 .center ul{padding-left:15px}.wrapper-ocnet-noel .wrap .col-2 .center ul li{list-style-type:disc;padding-left:30px}.wrapper-ocnet-noel .wrap .col-2 .center p.promo{text-transform:uppercase;text-align:center;font-size:1.66667rem;font-weight:700;margin-bottom:10px;font-family:bnpp_sans_condensed_light,Arial,sans-serif}.wrapper-ocnet-noel .wrap .col-2 .center .row{text-align:center}.wrapper-ocnet-noel .wrap ul{padding-left:0}.wrapper-ocnet-noel .wrap ul li{list-style-type:none}.wrapper-ocnet-noel .wrap ul li span{background:#e7e7e7 none repeat scroll 0 0;border:2px solid #e32d66;border-radius:50%;color:#e32d66;display:inline-block;height:30px;margin-top:2px;padding-left:9px;padding-top:3px;vertical-align:super;width:30px}
+.wrapper-ocnet-noel .wrap ul li p{text-transform:uppercase;display:inline-block;font-size:1.8rem;color:#e32d66;font-family:bnpp_sans_condensed_light,Arial,sans-serif;margin-bottom:0;margin-top:0;font-weight:700}
+
+/* Agence en ligne */
+.ael-faq .list-fav > li {margin-bottom: 10px;}
+.ael-faq .cap {margin: -5px 0 0;}
+.ael-faq .row.js-detail-toggle {padding: 0 2rem;}
+
+/*Assurance vie BPF*/
+.bpf p.link.transverse.ajouter-support {
+margin: 10px 0;
+border: 1px solid #ccc;
+padding: 20px;
+}
+
+.AppliMobile .cookies { display: none; }
+
+/* Message aeoi assurance vie */
+
+#message-aeoi { padding: 2rem;}
+
+
+/* Visuel Assurance page contact */
+.wrapper-contact .row.assurance {
+    background: url("/rsc/contrib/image/particuliers/contact/specialistes-assurance.jpg") no-repeat scroll center top / cover transparent;
+    width: 100%;
+    min-height: 351px;
+    color: #FFF;
+    padding: 20px 30px;
+}
+/* fix messagerie */
+#wrapper-ocnet-confirmation #list-info-ocnet ul li {
+    color: hsl(333, 62%, 38%);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#wrapper-ocnet-confirmation div.level1:last-of-type div#list-info-ocnet {
+    float: left;
+    max-width: 660px;
+    padding: 0 0 0 90px;
+    position: relative;
+    width: 100%;
+}
+#wrapper-ocnet-confirmation div#list-info-ocnet::before {
+    background-image: none;
+    content: "\e6b2";
+    display: inline;
+    font-family: iconbnp;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    height: 0;
+    left: 45px;
+    line-height: 1;
+    position: absolute;
+    text-transform: none;
+    top: 30%;
+    width: 0;
+    color: hsl(333, 61%, 38%);
+}
+
+/* Quick-simu Auto */
+.quick-resultat .tag-reco{
+    padding: 2px 5px;
+}
+
+@media screen and (max-width: 768px) {
+    #nav5-portefeuille-bourse span {
+        padding: 10px 0 0 44px;
+    }
+    #nav6-produits span, #nav7-besoins span {
+        padding-left: 8px;
+    }
+    #nav8-contact a  {
+        padding-left: 8px;
+    }
+    #nav9-bon-plan {
+        padding-left: 42px;
+    }
+    #nav-connect {
+	top: 0;
+    }
+    body:not(.client) .onglet-nav {
+      top: 0;
+    }
+
+}
+#formPokaHeader, #formPoka {display: none;}
+
+/* fix pour acsi */
+.wrapper-acsi .bestof a {
+    padding: 10px;
+}
+
+section.wrap .wrapper-acsi3 div.icon-form-alert { background-position: center -72px; }
+
+/* fix disclaimer */
+.disclaimer_temp { background-color: #fff; padding: 10px; display:block;}
+.disclaimer_temp ul { padding: 0px 15px; margin:0;}
+.disclaimer_temp p, .disclaimer_temp li { color: #000; font-family: "Times New Roman"; font-size: 12px; margin:0; padding:0;}
+.disclaimer_temp.fixed {background-color: #fff; display: block; padding: 10px; position: fixed; bottom: 15px; z-index: 99999; left: 0; width: 100%; }
+marquee { background-color: #fff; padding: 0px; display:block;color: #000; font-family: "Times New Roman"; font-size: 12px; height: 20px; position: fixed; bottom: 0; z-index: 99999; left: 0;}
+
+.AppliMobile .list-avis-chat-nps,
+.AppliMobile .list-avis-chat-nps + .row-labels {
+  width: 320px;
+  margin: 0 auto;
+}
+.wrapper-commande-chequier .icon.icon-enveloppe-alt::before {content: "\e6cb"; font-size:64px;}
+.wrapper-commande-chequier .icon.icon-enveloppe-bis::before {content: "\e6d5"; font-size:64px;}
+
+.ident .bottom-header { top: 0 !important; position: fixed; }
+
+/* suppression bulles promo bons plans */
+/*.liste-bon-plan .avantage-promo { display:none;}
+*/
+#ia-demat .wrapper-main-rop-list .rop-montant > .positif {
+    left: 0;
+}
+/* changement couleur headers pret perso */
+#zp_prets_personnels p.fpbpf_headerTop {color: #9838a8;}
+#zp_prets_personnels p.fpbpf_headerTop em {color: #424242; font-style: inherit;}
+#zp_credits_conso p.fpbpf_headerTop {color: #9838a8;}
+#zp_credits_conso p.fpbpf_headerTop em {color: #424242; font-style: inherit;}
+
+/* home agence-trouver */
+#agence-trouver-row { display: none; }
+#agence-trouver-row #infos-a p:nth-of-type(2) {margin-top:-22px;}
+
+#accueil_particuliers #devenir-client-row {
+    padding: 80px;
+}
+
+/* fix message pour mefav sur udc */
+body.bpf .message-assur-vie {margin: 1rem 0 1.5rem 0;}
+.message-assur-vie .icon-info {margin-top: 0.5rem;}
+
+/* fix vente flash cartes */
+.wrapper-vente-flash header {
+    padding: 2.5rem 0rem 2rem 26.25rem;
+}
+
+#wcm-l-vente-flash-cartes .col-2:nth-child(2n) {
+    margin-right: inherit;
+}
+#wcm-l-vente-flash-cartes .col-2 {
+    width: inherit;
+    margin-right: 10%;
+}
+#wcm-l-vente-flash-cartes .wrapper-vente-flash section .liste-offres .item{
+	width: 38%;
+}
+
+/* vente flash cartes */
+@media screen and (max-width: 768px) {
+    #wcm-l-vente-flash-cartes .wrapper-vente-flash section .liste-offres .item {
+        width: 100%;
+    }
+    .wrapper-vente-flash header {
+        padding: 1rem;
+    }
+}
+
+/* page contact */
+/* ajout couleurs textes */
+span.vert {color: #31bb13;}
+span.bleu {color: #2491ee;}
+span.orange {color: #e3514b;}
+
+.wrapper-contact h3 {
+    text-transform: uppercase;
+}
+
+.wrapper-contact.second {
+    padding: 30px 30px 70px;
+}
+
+.wrapper-contact .col-2 .chat p {
+    color: #FFF;
+}
+.wrapper-contact .col-2 .tel {
+    height: 351px;
+    background: transparent url("/rsc/contrib/image/particuliers/contact/specialiste.jpg") no-repeat scroll -415px top / cover;
+}
+.wrapper-contact .row.epargne {
+    background: transparent url("/rsc/contrib/image/particuliers/contact/epargne-bourse.jpg") no-repeat scroll center top / cover;
+}
+.wrapper-contact .row.assurance {
+    background: transparent url("/rsc/contrib/image/particuliers/contact/specialistes-assurance-new.jpg") no-repeat scroll center top / cover;
+}
+.wrapper-contact .col-2 .chat {
+    min-height: 351px;
+}
+.wrapper-contact.second .row .col-2:first-child {
+    border-right: 5px solid #F8F8F8;
+}
+.light-grey a {
+    color: #999;
+    text-decoration: underline;
+}
+
+/* correction priority footer */
+body.priority #footer {clear:both;}
+
+/* correction econsentement */
+body.ec-mesdocuments .home-rel { display:none;}
+
+/* masquage QA VCD */
+div[id="12000000014006562_00007"], div[id="12000000014007424002_00007"], div[id="12000000014006623_00007"], div[id="12000000014009006_00007"] { display: none;}
+
+/* hide documents � signer pour pro 
+body.pro.ec-mesdocuments .blue.pointer.applications {display:none;}*/
+
+/* correctif padding clauses b�n�ficiaires */
+#wcm-l-clause-beneficiaire section.wrap {padding-top:110px}
+
+/* add label excellence */
+#hasLogo h2 {width: calc(100% - 100px); float:left;}
+#hasLogo #label-logo {width: 100px; float:left;clear:none !important;}
+#fp_main_content #fp_intro ul#label-logo {padding: 30px 100px 20px 0px;background: transparent url("/rsc/contrib/image/particuliers/gabarits-libres/Logo-label-excellence-ADE-2016.png") no-repeat scroll calc(100% - 20px) center / 80px 0;background-size: 80px;background-position: calc(100% - 20px) 0;}
+
+.list-mescomptes-container{
+height:410px;
+margin-top:-1px; 
+}
+
+/* modif version webview arbitrage bpf */
+body.webview #liste-support { position: fixed; top: 0; padding-bottom: 2rem;}
+body.webview .scroll-to-top-btn  {display: none!important;}
+
+/* fix demat pro � replacer dans demat pro.scss */
+body.pro #wcm-l-nav-mesdocuments .header-page  {
+ background-image: -webkit-linear-gradient(0deg, #006072, #007867);
+  background-image: linear-gradient(0deg, #006072, #007867);
+}
+
+/* Update demat */
+.icon.icon-pin-white {background-image: url(/rsc/contrib/image/particuliers/rop/sprite-rop2.png); background-repeat: no-repeat; background-position: center -232px; height: 24px; width: 24px; display: block; color: #fff; float: left; margin: 10px 7px 0 0; } 
+.blue.pointer.parametres p a { color: #fff;}
+.blue.pointer.parametres .icon { margin-top: 10px}
+
+/* message ident */
+#ia-identification #zone-publiable-haute { padding:5% 0}
+#ia-identification #zone-publiable-haute > p {margin: 0;padding:0 5% 1rem 5%;}
+#ia-identification #zone-publiable-haute > p.no-padding-bottom {margin-bottom: 0;padding-bottom: 0;}
+body.part #ia-identification #zone-publiable-haute > p span.green-txt { color:#1b9b5b;white-space: nowrap;}
+body.pro #ia-identification #zone-publiable-haute > p span.green-txt { color:#00b38b;}
+#ia-identification #zone-publiable-haute h2 {font-size: 2rem;margin: 0;padding:0.8rem 5% 0 5%;}
+/*#ia-identification {background: url('/rsc/contrib/image/generique/picto-ident.png') top right no-repeat transparent;}*/
+#ia-identification .col-aside { background-color: transparent;width: 37%;}
+#ia-identification .btn-secondary.small-text {font-size: 80%;}
+
+/*#ia-identification .encartSecu { background: url('/rsc/contrib/image/ident/visuel_mac.jpg') center right no-repeat #fff;background-size: 40%; padding: 1rem; margin-left:1rem;}
+body.bpf #ia-identification .encartSecu { background: url('/rsc/contrib/image/ident/visuel_mac_bpf.jpg') center right no-repeat #fff;background-size: 40%; padding: 1rem; margin-left:1rem;}*/
+
+#ia-identification .encartSecu { background: url('/rsc/contrib/image/ident/loupe_part.png') center right no-repeat #fff;background-size: 35%; padding: 1rem; margin-left:1rem;}
+body.en #ia-identification .encartSecu { background: url('/rsc/contrib/image/ident/loupe_part_en.png') center right no-repeat #fff;background-size: 35%; padding: 1rem; margin-left:1rem;}
+body.bpf #ia-identification .encartSecu { background: url('/rsc/contrib/image/ident/loupe_prive.png') center right no-repeat #fff;background-size: 35%; padding: 1rem; margin-left:1rem;}
+body.bpf #ia-identification .encartSecu { background: url('/rsc/contrib/image/ident/loupe_prive.png') center right no-repeat #fff;background-size: 35%; padding: 1rem; margin-left:1rem;}
+body.pro #ia-identification .encartSecu { background: url('/rsc/contrib/image/ident/loupe_pro.png') center right no-repeat #fff;background-size: 35%; padding: 1rem; margin-left:1rem;}
+
+
+body.part #ia-identification .encartSecu span.green-txt { color:#1b9b5b;}
+body.pro #ia-identification .encartSecu span.green-txt { color:#00b38b;}
+#ia-identification .encartSecu p, #ia-identification .encartSecu h2 { margin-top: 0; width:60%;}
+#ia-identification #zone-publiable-haute .encartSecu h2 {padding-left:0}
+.icon-interro { background: url('/rsc/contrib/image/ident/ident_pictos.jpg') 0px -3px no-repeat transparent; display: block; width: 30px; height:27px;float: left;}
+.icon-shield { background: url('/rsc/contrib/image/ident/ident_pictos.jpg') 0px -72px no-repeat transparent; display: block; width: 30px; height:27px;float: left;}
+.icon-accessibility { background: url('/rsc/contrib/image/ident/ident_pictos.jpg') 0px -157px no-repeat transparent; display: block; width: 30px; height:27px;float: left;}
+body.bpf .icon-interro { background: url('/rsc/contrib/image/ident/ident_pictos_bpf.jpg') 0px -3px no-repeat transparent; display: block; width: 30px; height:27px;float: left;}
+body.bpf .icon-shield { background: url('/rsc/contrib/image/ident/ident_pictos_bpf.jpg') 0px -75px no-repeat transparent; display: block; width: 30px; height:27px;float: left;}
+.ident .main-content {min-height: 771px;}
+@media screen and (max-width: 414px) {
+  /*body.bpf.preview .ident .main-content{
+    min-height: 600px;
+  }*/
+}
+@media screen and (min-width: 1366px) {#ia-identification .col-aside { width: 42%;}}
+
+/* ajout benef ANR */
+div#zp_ajoutBenefANR { padding-top: 15px; }
+div#zp_ajoutBenefANR span.icon.icon-validation-tel {
+  font-size: 3rem;
+  display: block;
+}
+div#zp_ajoutBenefANR p:first-of-type{
+  padding: 0 20px;
+}
+div#zp_ajoutBenefANR p {
+  padding: 5px 65px;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  div#zp_ajoutBenefANR span.icon.icon-validation-tel {
+    display: none;
+  }
+}
+
+[name="code-oublie"] .date-picker::after {
+background-image: none
+}
+
+div.level1.fpbpf_header div.level2.fpbpf_headerTop {
+top: 30px;
+}
+
+/* fix pour ANR Cl� Digitale 
+section#confirmation.wrapper-mobile div.confirmation p:last-of-type{
+  display:none;
+}*/
+
+#oppoPrelevement .header-page {
+padding-top: 90px;
+}
+
+#upload-fileEcrire { position: relative; }
+.messagerie-loader-piecejointe  .jsloader { background-image: url(/rsc/contrib/image/generique/loader-sprites-grey.png); }
+/*.ls-area.mainContent .secAdv_mainContent .secAdv_mainHeader__menu ul li + li{width:20%;}*/
+.ls-area.mainContent .secAdv_mainContent .secAdv_mainHeader__menu ul li.separator{width:1px;}
+.secAdv_mainContent .secAdv_pushs .push.col-100{width:100%; height:auto;}
+.secAdv_mainContent .secAdv_pushs h3 {font-size:20px;}
+
+/* correctif e-consentement */
+#ia-econsentement a[disabled] {pointer-events: none;opacity: 0.4;}
+
+/*masque l'info bulle date �ch�ance mpp */
+#ia-udcarte .input-choix-date-echeance .help-text-container {display:none;}
+
+/* correctif message erreur ajouter compte */
+.ajoutercompte_erreur{ margin:100px 20px; width:auto;}
+
+/* correctif couleur r�sultats simulateur client�le priority */
+body.priority #nextoutils_preEtudiantSimulateur .list-recap-light em {color: #fff;}
+
+/* Corrections retour optimisations */
+
+/*
+#ia-commandechq .listeComptes .form-ligne-titre{margin-top:0;}
+#ia-sepawl .wrap{margin-top:0;}
+#opposition-select-account .form-ligne-titre{margin-top:0;}
+#ia-telechargerop .white-box.wb-pad.lb-box p{color:#9d265c;}
+#ia-telechargerop .white-box.wb-pad.lb-box p.libelle{color:#999;}
+#ia-telechargerop .tel-op.tel-op1 .submit-btn{margin-top:0;}
+#ia-sepawl .wrap.white-list h2{display:none;}
+#ia-gbudget .barre-recherche .form .custom-select2:after, .barre-recherche .form .custom-select:after{background-color:transparent}
+#wrapper #tabs-navigation-market.transacEnFait + #topContent {margin-top: 63px; padding-top: 22px;} */
+
+ /*zone publicable authent forte 
+#ia-beneficiaire #zone-publiable-haute-af {display: block;}*/
+
+/* corectif outil MPP */
+#ia-udcarte .breadcrumb {display: none;}
+
+/* taille des images dans msg BMM */
+#wrapper-ocnet-confirmation #imgNoResize img {width: auto;}
+
+
+/* popin brexit */
+body.mw-1400 .pop-in-brexit {
+  max-width: 1260px;
+}
+
+.pop-in-brexit {
+  width: 100%;
+  z-index: 4;
+  padding: .75rem 1rem .75rem 4rem;
+}
+
+.bpf .pop-in-brexit {
+  background-color: rgb(185, 149, 71);
+  background-color: rgba(185, 149, 71, 0.75);
+}
+
+.bpf .pop-in-brexit p {
+  color: #FFF;
+  font-size: 1.4em;
+  margin: 0.75rem 0 0;
+}
+.bpf .pop-in-brexit .btn-primary {
+  background-color:#3c322b; 
+  background-image: linear-gradient(#3c322b,#2d2620);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3c322b', endColorstr='#2d2620',GradientType=0 );
+  border-color: #000;
+}
+.bpf .pop-in-brexit .btn-primary:not([disabled]):hover  {
+  background-color:#2d2620; 
+  background-image: linear-gradient(#2d2620,#3c322b);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2d2620', endColorstr='#3c322b',GradientType=0 );
+  border-color: #000;
+}
+.part .pop-in-brexit {
+  background-color: rgb(77, 200, 121);
+  background-color: rgba(77, 200, 121, 0.75);
+}
+.part .pop-in-brexit p {
+  color: #FFF;
+  font-size: 1.4em;
+  margin: 0.75rem 0 0;
+}
+
+.wrapper-virement #vf-total,
+.wrapper-virement #virement-total {position:relative; top: -2rem;}
+
+/* ajustements fonts ocnet */
+body.ec-messagerie .p-style-bigger {font-size: 1.1em; line-height: 1.5em !important; margin-top:0; padding-top:0;}
+
+/* suppression colonne de droite landing Paylib */
+
+div#wcm-l-Landing_paylib div#wrapper-gabarit-libre div.landing-paylib-part {
+  width: 100%!important;
+}
+
+div#wcm-l-Landing_paylib div#colonneContactContainer {
+  display: none;
+}
+
+/* Teaser ocnet le-mag */
+section.wrapper-teaser {background: transparent url("/rsc/contrib/image/ocnet/teasingNL-V2-no-cartouche.jpg") no-repeat scroll left top; background-size: 100%; height: 300px; position: relative; width: 100%; max-width: 650px; }
+section.wrapper-teaser .popin {width: 400px; padding:0; margin:2.5rem auto; } 
+section.wrapper-teaser .popin h3 {color: #1b9b5b; text-align:left; margin: 0; }
+section.wrapper-teaser .popin p {margin: 0.5rem 0 1rem; text-align: left; }
+section.wrapper-teaser .popin button {margin:0; }
+
+/* nav mobile virement */
+@media screen and (max-width: 768px) {
+	.new-nav #wcm-l-nav-virements .onglet.sous-section {
+    	top: 117px;
+	height:56px;
+
+	}
+}
+/* masque qa mrh consultation */
+
+.mrh.consultation .contrat-en-ligne,
+.mrh.consultation .demander-assistance,
+.mrh.consultation .declarer-sinistre,
+.mrh.consultation .en-savoir-plus {display:none;}
+
+#ia-MRH .onglet {position:relative; top: -3em;}
+
+
+
+
+#virement-permanent-etape2 #mssgvir, #virement-permanent-etape3 #mssgvir, #ia-virement #mssgvir {margin-left:2rem;}
+body.bpf #virement-permanent-etape3 #mssgvir, body.bpf #virement-permanent-etape2 #mssgvir, body.bpf #ia-virement #mssgvir {color:#a4123f;}
+#virement-permanent-etape2 #mssgvir i, #virement-permanent-etape3 #mssgvir i, #ia-virement #mssgvir i {position:relative; top:8px;}
+
+#seisme {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 20px;
+}
+
+#seisme #seisme-wording { 
+  color: rgb(175,175, 175); 
+  display: table-cell; 
+  padding-right: 10px; 
+  width: 99%;
+}
+#seisme #seisme-button { display: table-cell; vertical-align: middle; text-align: right;}
+#seisme a { display: inline-block; white-space:nowrap; }
+@media all and (max-width: 414px) {
+   #seisme #seisme-wording {
+     display: block;
+   }
+   #seisme #seisme-button {
+     display: block;
+     text-align: left;
+   }
+}
+
+.bpf #patch-banque-securite #patch-banque-securite-link {
+    background: transparent url(/rsc/contrib/image/site-securise/backgrounds/pushs/en-toute-secu-bpf.jpg) no-repeat center top;
+}
+
+.part #patch-banque-securite #patch-banque-securite-link {
+    background: transparent url(/rsc/contrib/image/site-securise/backgrounds/pushs/en-toute-secu-part.jpg) no-repeat center top;
+}
+
+.pro #patch-banque-securite #patch-banque-securite-link {
+    background: transparent url(/rsc/contrib/image/site-securise/backgrounds/pushs/en-toute-secu-pro.jpg) no-repeat center top;
+}
+
+/* modification popin devenir client pour suivi de dossier */
+/*.wrapper-popin-demo #btn-suivi-dossier {display: none;}*/
+body.part .wrapper-popin-demo #btn-suivi-dossier {display: block;}
+body.part .wrapper-popin-demo {height: 420px;}
+body.part .wrapper-popin-demo #btn-suivi-dossier .col-40 {background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;}
+body.part .wrapper-popin-demo #btn-suivi-dossier .col-40 .icon {color: #adffd0;font-size: 3rem;padding-left: 35px;}
+
+
+/*fix formulaire de rappel*/
+#apppopin.wrapper-redirection{padding:2rem;}
+
+
+/* corrections LOA   */
+#ia-loa-pro .form .fieldset{border-left-color: #993ba7;}
+#ia-loa-pro .onglet{background-color: #faf9f9;list-style: outside none none;margin: 0;padding: 11px 0 11px 11px;transition: all 0.2s ease-in-out 0s;}
+#ia-loa-pro .onglet{display:block !important;}
+/*.wcm-fil-ariane.style-default.fam-credit.pro .wcm-fil-ariane-header { font-size: 0.93333rem; padding: 0rem 1rem 1rem 2rem; position: absolute; text-transform: capitalize;  top: 83px; z-index: 5;}
+.wcm-fil-ariane.style-default.fam-credit.pro .wcm-fil-ariane-header .wcm-fil-ariane-token { color:#999;}*/
+.wcm-fil-ariane.style-default.fam-credit.pro .wcm-fil-ariane-header .wcm-fil-ariane-token { color:#fff;}
+#ia-loa-pro .alt-breadcrumb .wcm-fil-ariane-header .wcm-fil-ariane-token.current{color: #b3b3b3;}
+/*.wcm-fil-ariane.style-default.fam-credit.pro .wcm-fil-ariane-token a {color:#999;}*/
+.wcm-fil-ariane.style-default.fam-credit.pro .wcm-fil-ariane-token a {color:#fff;}
+#ia-loa-pro .form .fieldset .custom-select .pull-right {position: absolute;left: 24px; bottom: 51px; top: -26px;}
+#ia-rdv-pro .protection-c .fieldset, #ia-rdv-pro .protection-c .lb-box{border-left-color: #993ba7;}
+#ia-rdv-pro .credit-c .circle.circle-small, #ia-rdv-pro .credit-c .help-text-container .circle{ border-color: #993ba7;
+    color: #993ba7;}
+#ia-rdv-pro .credit-c [type="radio"]:checked + label::before{border: 1px solid #993ba7;}
+#ia-rdv-pro .credit-c [type="radio"]:checked + label::after, #ia-rdv-pro .credit-c [type="radio"]:not(:checked) + label::after{color:#993ba7;}
+#ia-rdv-pro .icon-form-confirm{background-image:url("/rsc/contrib/image/generique_pro/form-confirm.png");background-position: center -150px;}
+#ia-rdv-pro .onglet{background-color: #faf9f9;list-style: outside none none;margin: 0;padding: 11px 0 11px 11px;transition: all 0.2s ease-in-out 0s;}
+#ia-loa-pro .simulateur-auto #resultat1 .list-recap-light li:last-of-type em, .simulateur-auto #resultat1 .list-recap-light li:last-of-type span{vertical-align:top;}
+
+/* hide offres du moment CSL */
+.OfMoment {display:none;}
+
+/* hide webcallback mode mobile/tablette pour bpf */
+@media screen and (max-width: 768px) {
+body.bpf .colonne-contact .wrapper-chat, .colonne-contact .wrapper_chat { display: none;}
+body.preview.bpf .colonne-contact .wrapper-chat, .colonne-contact .wrapper_chat { display: block;} 
+body.preview.bpf .colonne-contact.v3 .wrapper_chat .content_chat { text-align:center;} 
+}
+
+/* calage bouton player video sur strategie d'investissement privé */
+
+body.bpf.preview #vjs_video_3 .bc-player-434f97c9-7d58-42de-b0d0-f3298071aa52_default.vjs-mouse .vjs-big-play-button{
+    top:35%!important;
+    left:35%!important;
+}
+
+
+/* kyc */
+
+.kyc a[disabled] {
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+/* fix infographie bourse */
+#area-to-watch { height:800px;overflow:auto;}
+
+/* fix ident */
+@media screen and (min-width : 768px) {
+    #ia-identification {
+        position: relative;
+    }
+
+    #ia-identification section.main-content {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+    }
+
+    #ia-identification .ident aside.col-aside.arrow-left {
+        float: right;
+    }
+
+}
+
+/* cache message erreur sur Terceo */
+.terceo_erreur {display: none;}
+
+/* nav gauche EN stock exchange and UCI / you and your bank */ 
+body.en.client #mainMenu nav ul #nav5-portefeuille-bourse>span:first-child,
+body.en.client #mainMenu nav ul #nav9-mabanque>span:first-child {
+  line-height: 18px;
+}
+
+/* masquage "écrire à mon conseiller" sur page contact pour les pro */
+body.pro #nextoutils_monconseiller button.ecrireConseiller {display: none;}
+
+/* masquage icone profil sur demat */
+#ia-demat .wrapper-mes-documents .liste-mes-documents .document-description .libelle i {display:none;}
+
+/* fix rapide udc : non visibilité de la popin modification libellé en bas de page */
+#ia-udc .udc {padding-bottom:300px;}
+
+/*site EN */
+body.en #zone-publiable-haute-af,
+body.en #zone-publiable-basse-af {display:none !important;}
+body.en #mainMenu nav li.portefeuille-nav>ul>li>span.not-available {color:#212121;}
+body.part.en #nomTitulaire {text-transform: capitalize;}
+
+/* cache bouton "envoyer par courrier" sur souscription PEL/CEL */
+#ia-pelcel #demander-par-courrier {display: none;}
+
+/* cache l'offre 2 sur NCI */
+#ia-nci div[name="offre2"] {display: none;}
+#ia-nci div[name="offre1"] { width:100%}
+
+/* cache premiers boutons sur KYC */
+.wrapper-kyc .row.accordeon > div:first-of-type {display: none;}
+#ia-kyc label[for="skip_form"] span:nth-child(4), #ia-kyc label[for="skip_form"] span:nth-child(5) {display: none;}
+
+/* correctif display boutons nci */
+#ia-nci [class*="btn-"],#ia-nci  a[class*="btn-"] {display:inline-block;}
+
+/* correctif title udc */
+@media screen and (max-width: 768px) {
+	.ia-udc .title-udc {display:none;}
+  #colonneContactContainer { display: none}
+}
+
+/* correctif help-text-popup messagerie */
+#popMessagerie .arrow:before {border-bottom-color: #A33467;}
+#popMessagerie .arrow:after {border-bottom-color: transparent;}
+#popMessagerie.help-text-container {position: absolute;top: -25px;right: 360px;}
+#popMessagerie .help-text-popup {width: 325px;background-color: #A33467;color: #fff}
+#popMessagerie .help-text-popup .arrow {left: 168px;}
+#popMessagerie .help-text-popup .close {color: #fff; font-family: calibri; font-size: 24px; height: 24px; line-height: 15px; margin-left: 3px; position: relative; right: -7px; top: -7px; width: 24px; }
+#popMessagerie .help-text-popup .col-25 {padding: 13px 0 0 20px;}
+#popMessagerie .help-text-popup .col-25 .icon { font-size: 35px;}
+#popMessagerie .help-text-popup .goto-msg {float: right;}
+#popMessagerie .help-text-popup .popin-close {color:#fff;border-bottom: solid 1px #fff;}
+#popMessagerie .help-text-popup.up-arrow:after {content: ''; display: block; position: absolute; left: 50%; bottom: 100%; width: 0; height: 0; border-bottom: 10px solid #A33467; border-top: 10px solid transparent; border-left: 10px solid transparent; border-right: 10px solid transparent;}
+
+
+/* message temporaire telecharger opération */
+#info-telop {margin-top: 1.5em; margin-bottom: 1.75em; padding: 1.75em 5.5em;}
+#info-telop p{padding-left: 6.5em;}
+
+/* nav mobile virement */
+@media screen and (max-width: 768px) {
+	.ec-messagerie.message-securise{
+    	display: none!important;
+	}
+}
+/* affichage zones hautes LOA */
+body.pro.souscription #id_balise_div {padding-top: 0;}
+body.pro.souscription .wcm-fil-ariane.style-default.fam-credit.pro .wcm-fil-ariane-token a {color: hsl(0, 0%, 60%);}
+body.pro.souscription .wcm-fil-ariane.style-default.fam-credit.pro .wcm-fil-ariane-header .wcm-fil-ariane-token {color: hsl(0, 0%, 60%);}
+
+
+/* rdv net / cache "autre agence" + bouton modifier rdv */
+#ia-rdv .form .rdv_radio label[for="rdv_choix_agence_3"], #ia-rdv #rdv_container #modifier-rdv {display: none;}
+
+/* message info changement code secret */
+#wcm-l-title-code-secret .messageInfo .icon-check {display: inline-block; }
+#wcm-l-title-code-secret .messageInfo ul {list-style-type: none; margin: 0 auto; display: block; width: 600px; }
+#wcm-l-title-code-secret .messageInfo ul li {text-align: left; }
+
+/* webview capro - cache bouton retour fin de souscription */
+body.webview #clientRDVConfirmation a[rv-html="config.app.capro.bouton.retour"] {display: none;}
+
+/* Styles bannière bcom */
+.mw-1400 .bcomBanner {max-width: 1400px; }
+.bcomBanner {background-color: hsl(1, 72%, 69%); left: 0; margin: 0 auto; position: fixed; right: 0; text-align: left; z-index: 202; }
+.bcomBanner, body.en .bcomBanner.avertissement {bottom: 0; }
+.bcomBanner p {color: #fff; float: left; font-size: 1rem; padding-bottom: 0; padding-left: 2%; padding-top: 0; width:85%; }
+.bcomBanner p span { font-size: .8rem}
+.bcomBanner .close {border: medium none; color: hsl(0, 0%, 100%); font-family: bnp_regular,Arial,sans-serif; font-size: 20px; margin: 5px 5px 0 0; padding: 0;} 
+
+/*cifpea */
+
+#peacif #offreSouscription .white-box .col-3 p {margin-top: 0;}
+#peacif #offreSouscription .white-box .col-3 .wb-pad {padding: 1rem 1.25rem .25rem;}
+
+/*patch  sur /fr/notre-offre/credits/financements-et-formules-locatives-auto/formulaire-offre-global-auto à la demande du juridique */
+#nextoutils_formulaire_json_globalAuto .foot-note{
+  font-size:1rem;
+  margin-top:-15px;
+  padding-top:0;
+}
+
+/* fix onglet facilimouv pour part */
+.part.new-nav .onglet-nav:not(.comptes-contrats) .onglet-container .onglet li:nth-child(5) { display:inline-block}
+.part.new-nav .onglet-nav:not(.comptes-contrats) .onglet-container .onglet li:nth-child(6) { display:none}
+
+/* fix tailler btn avec loader */
+body.part .loader {max-width: 150px; background-image: url("/rsc/contrib/image/generique/loader.gif");}
+body.pro .loader {max-width: 150px; background-image: url("/rsc/contrib/image/generique_pro/loader.gif");}
+body.bpf .loader {max-width: 150px; background-image: url("/rsc/contrib/image/generique_bpf/loader.gif");}
+body.ident .loader {max-width:100%}
+
+/* cache flèches navigation pour bourse */
+body.bourse .onglet-pagination {display:none;}
+
+body.pro .wrapper-popin-demo .row.fleche::after {border-color: #006072 rgba(255,255,255,0) rgba(255,255,255,0);
+}
+
+body.bpf #426-banner#426-banner .banner-udc__lesaviezvous.bpf{
+    width: 61%;
+    margin-top: 1.3%;
+}   
+.new-nav .onglet-sous-section-pagination {top:160px;}
+
+/* gestion affichage sous-menu bourse part */
+#sub-nav6-bourse {display:none;}
+#nav6-produits-child-li2 {display:none;}
+body.client #nav6-produits-child-li2 {display:block;}
+body.client #sub-nav6-bourse {display:block;}
+body.client #nav6-bourse {display:none;}
+
+
+/* correctifs v mobile kyc */
+@media screen and (max-width: 450px) {
+	#ia-kyc h3 span {display: none;}
+	#ia-kyc .form .form-control.valid {background: none;}
+	#ia-kyc .list-recapitulatif li {border: 0 none; padding: 0; }
+	#ia-kyc .list-recapitulatif .pull-right.mtm {padding: 0 10px;}
+	#ia-kyc .list-recapitulatif .pull-right.mtm .icon-stylo {margin-top: 10px;}
+}
+
+.bc-player-434f97c9-7d58-42de-b0d0-f3298071aa52_default.vjs-mouse .vjs-big-play-button{
+  top: 100px;
+  left: 180px;
+}
+
+/* correctifs vidyo */
+#ia-vidyo .wrapper-vidyo .icon.icon-phone {margin-left: 27px;}
+#ia-vidyo .message-erreur {background: hsla(0, 0%, 0%, 0) url("/rsc/contrib/image/generique/form-info-mini.png") no-repeat scroll 0 center; border: 0 none; color: hsl(333, 62%, 38%); height: 37px; margin: 10px 0; padding: 7px 10px 10px 45px; }
+body.part .vidyo .vidyo-body {padding-top: 3.53333rem;} 
+
+
+/* fix btn close chat */
+body.AppliMobile header.header-chat {display:block;}
+
+/* TEMP - ajustements messagerie mobile */
+@media screen and (max-width: 500px) {
+.container-message .body-msg {padding: 0;}
+.messages .container-message .body-msg {padding: 0;}
+.messages .container-message .body-msg .wrap {padding: 0;}
+.container-message .body-msg ul { padding-left:1rem;}
+#wcm-l-nav-messagerie .ec-messagerie .header-page .close-cont {display: none;}
+.messages .container-message .body-msg .wrap header {background-size: 100% auto; height: 68px;}
+#wrapper-ocnet-confirmation div.level1:first-of-type > .wcm-image img, 
+#wrapper-ocnet-fonctionnalites div.level1:first-of-type > .wcm-image img, 
+#wrappper-push-produits div.level1:first-of-type > .wcm-image img { width: 100%;}
+body.ec-messagerie #mainContent { min-height: auto;}
+.messages #lireMessage .top-message { display: none;}
+}
+@media screen and (max-width: 770px) {
+button.btn-.small.pull-left.mobile-only { display:none;}
+#ia-messagerie #ecrireMessage .send-btn.btn-primary.small.pull-left { display: block; margin: 0 auto; float: none;}
+}
+
+/* suppression bloc dans page sécurité pour mode webview */
+body.webview #sept_conseils_de_navigation #services {display:none;}
+
+/*correctif kyc mobile */
+
+@media screen and (max-width: 768px) {
+	.preview #ia-kyc ul[name="recapitulatifPatrimoine"] + div.fields-line .col-30:nth-of-type(1) label:nth-of-type(2),
+	.preview #ia-kyc ul[name="recapitulatifPatrimoine"] + div.fields-line .col-30:nth-of-type(1) label:nth-of-type(2) + .help-text-container,
+	.preview #ia-kyc ul[name="recapitulatifPatrimoine"] + div.fields-line .col-30:nth-of-type(1) label:nth-of-type(2) + .help-text-container + .custom-select {position:relative; top:100px}
+
+	.preview #ia-kyc ul[name="recapitulatifPatrimoine"] + div.fields-line .col-30:nth-of-type(2) label:nth-of-type(1),
+	.preview #ia-kyc ul[name="recapitulatifPatrimoine"] + div.fields-line .col-30:nth-of-type(2) label:nth-of-type(1) + .help-text-container,
+	.preview #ia-kyc ul[name="recapitulatifPatrimoine"] + div.fields-line .col-30:nth-of-type(2) label:nth-of-type(1) + .help-text-container + .custom-select {position:relative; top:-100px}
+}
+
+/*correctif headers mobile */
+
+@media screen and (max-width: 768px) {
+	.header-page {min-height: auto;}
+	body.ident #wrapper #ia-identification {overflow: visible;}
+	.wrapper-contact-prevoyance div.col-2.degrade-hover, .wrapper-contact-prevoyance div.col-3.degrade-hover {min-height: auto;margin-bottom: 10px;}
+}
+
+/* Désactivation temporaire KYC */
+/*#profil-profilClient {display: none;}*/
+
+/* positionnement breadcrumb no-subnav */
+body.espace-client.no-subnav .wcm-fil-ariane-header {top: 0;}
+
+/* Ajustements EpargneHub */
+.button-secondary.center.btn.carnet-ordre.carnet {display: none;}
+.button-secondary.center.btn.passer-ordre.passerOrder {display: none;}
+body.preview .button-secondary.center.btn.carnet-ordre.carnet {display: block;}
+body.preview .button-secondary.center.btn.passer-ordre.passerOrder {display: block;}
+
+.save-invest.dashboard .articles-list.row {display: none;}
+body.client .save-invest.dashboard .articles-list.row {display: block;}
+body.client .save-invest.dashboard .article.pull-left.main {display:none;}
+.save-invest.dashboard .bloc-placements .bloc-vision .donut-chart figure {float: none;margin: 0 auto;}
+#ia-epargnehub .footer-page {display: none;}
+
+
+/* test modification largeur panneau virements & services */
+@media screen and (min-width: 1140px) {
+.tuile-nav > ul {min-width: 1000px;}
+.tuile-nav > ul li {width: 16%;}
+}
+
+/* entrée dashboard épargne */
+#mainMenu nav li.portefeuille-nav li.nav-epargneHub {border: 0; margin-bottom: 1rem; font-size: 0.9rem; -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.4);-moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.4);box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.4);background-color: hsl(0, 0%, 100%); border-radius: 5px;}
+#mainMenu nav li.portefeuille-nav li.nav-epargneHub > a {font-weight: normal;color: hsl(0, 0%, 60%)}
+#mainMenu nav li.portefeuille-nav > ul > li > ul > li.nav-epargneHub::after {display: none;}
+#mainMenu nav li.portefeuille-nav li.nav-epargneHub > a span {color: hsl(0, 0%, 0%); font-size: 0.9rem; text-transform: uppercase; display: block; background: transparent url('/rsc/contrib/image/generique/picto-epargneHub.png') top left no-repeat; padding-left: 35px; }
+#mainMenu nav li.portefeuille-nav li.nav-epargneHub:hover {color: hsl(0, 0%, 60%);-webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.5);-moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.5);box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.5);background-color: hsl(0, 0%, 100%);}
+#mainMenu nav li.portefeuille-nav li.nav-epargneHub:hover > a span {color: hsl(208, 86%, 54%);}
+li.nav-epargneHub {display:none;}
+/*body.preview li.nav-epargneHub {display:block;}*/
+#navEpargneHub {display:none;}
+body.client #navEpargneHub {display:block;}
+#ia-epargnehub .header-page.has-onglet {margin-top: 0;}
+body.client #ia-epargnehub .header-page.has-onglet {margin-top: 60px;}
+#ia-epargnehub .save-invest .header-page {background-color: hsl(192, 88%, 53%);background-image: linear-gradient(-10deg, hsl(192, 88%, 53%), hsl(213, 75%, 51%));}
+
+/* fix dashboard epargne */
+.save-invest.dashboard #zone-publiable-video {overflow:hidden;}
+.save-invest.dashboard .my-wish ul#select-interet li span {pointer-events:none;}
+.save-invest.dashboard .teaser.prospect .secondary {min-height: 315px;}
+
+/* devenir client pro */
+#nextoutils_formulaire_json_devenirclient-PRO {padding-top: 5.5rem;}
+
+body.bpf.preview #nav8-souscription-epargne{background-position: left 16px;}
+
+/* fix entrée nav-ud */
+.part.new-nav .onglet-nav .onglet-container .onglet li:nth-child(5) {display:inline-block;}
+body.bpf #canvas-holder .bpf-sources {
+    clear: left;
+    padding: 10px 0 0;
+}

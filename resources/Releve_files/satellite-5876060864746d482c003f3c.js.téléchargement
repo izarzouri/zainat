@@ -1,0 +1,445 @@
+var Dt3m = (function() {
+  var User = (function() {
+    var getDataFromSession = function(branch, param) {
+      var userData = sessionStorage.info_client;
+
+      if (userData && userData != 'undefined')
+      	return JSON.parse(userData).data[branch][param];
+      else
+        return "user-not-connected";
+    };
+    var isLoggedOn = function() {
+      var userData = sessionStorage.info_client;
+      return userData ? true : false;
+    }
+
+    var getAge = function(today, dateString) {
+        var today = new Date(today);
+        var birthDate = new Date(dateString);
+        var age = today.getFullYear() - birthDate.getFullYear();
+        var m = today.getMonth() - birthDate.getMonth();
+        if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate()))
+        {
+            age--;
+        }
+        return age;
+    }
+
+    return {
+      getDataFromSession: getDataFromSession,
+      isLoggedOn: isLoggedOn,
+      getAge: getAge
+    }
+  })();
+
+  var Server = (function() {
+    return {
+      getTimestamp: function() {
+        var infosClient = sessionStorage.info_client;
+        var now = infosClient ? JSON.parse(infosClient).dateServeur : undefined;
+        return now && now !== 'undefined' ? now : undefined;
+      }
+    }
+  })();
+
+  var Rules = (function() {
+    /* Private Methods */
+    var setSectionning = function(fullpath) {
+      var pathArr = fullpath.split('/');
+      for (var i = 0; i <= pathArr.length; i++) {
+      	_satellite.setVar('chemin' + i, pathArr.slice(0, i).join('/'));
+      }
+      return true;
+    };
+
+    /* Public Methods */
+    var setEvents = function(eventState, eventArr) {
+      // Use scode to dynamically set events
+      s.usePlugins = true;
+
+      // Sets events to be used by the rule
+      switch (eventState) {
+        case 'start':
+          s.linkTrackEvents = s.events = s.apl(s.events, 'event29', ',', 1);
+          break;
+
+        case 'change':
+          s.linkTrackEvents = s.events = s.apl(s.events, 'event27', ',', 1);
+          break;
+
+        case 'end':
+          s.linkTrackEvents = s.events = s.apl(s.events, 'event27', ',', 1);
+          s.linkTrackEvents = s.events = s.apl(s.events, 'event30', ',', 1);
+          break;
+
+        case 'force':
+          $.each(eventArr, function(idx, val) {
+            s.linkTrackEvents = s.events = s.apl(s.events, 'event' + val, ',', 1);
+          })
+          break;
+
+        default:
+          break;
+      }
+
+      if (s.events && s.events.length > 0) {
+        checkForLead.apply(this, [s.events]);
+      }
+
+      s.linkTrackVars=s.apl(s.linkTrackVars,"events",",",1);
+
+      return true;
+    };
+
+    var checkForLead = function (evts) {
+      var expr = /event30/g;
+      var isLead = expr.test(evts);
+      var isProspect = (typeof _satellite.getVar('user__prospect') !== 'undefined' && _satellite.getVar('user__prospect')=== 'oui') ? true : false;
+      if (typeof evts !== 'undefined' && isLead && isProspect) {
+        _satellite.track('Record Lead');
+      }
+    };
+
+    var getEventState = function(currentStep, start, stop) {
+      var eventState = '';
+      if (currentStep >= start) {
+        eventState = currentStep === start ? 'start' : currentStep === stop ? 'end' : 'change';
+      }
+      return eventState;
+    };
+
+    var setCommonDEforEBR = function(service, currentStep) {
+      var current = service.steps[currentStep];
+
+      // eVar29
+      if (service.pathTitle && currentStep === 1 || currentStep === 0 || Number(current.etape) === 1 || Number(current.etape) === 1.1) {
+        _satellite.setVar('pathTitle', service.pathTitle);
+      }
+
+      // eVar92
+      if (currentStep === 1) {
+        if (service.typeUnivers) { _satellite.setVar('typeUnivers', service.typeUnivers); }
+        if (service.typeOutil) { _satellite.setVar('typeOutil', service.typeOutil); }
+      }
+
+      // eVar31
+      _satellite.setVar('stepTitle', current.title);
+
+      // pageName
+      _satellite.setVar('pageName', current.fullpath);
+
+      // eVar30
+      if (typeof current.etape === 'string' || typeof current.etape === 'number') {
+        _satellite.setVar('stepName', 'Etape ' + Number(current.etape));
+      } else {
+        _satellite.setVar('stepName', 'Etape ' + currentStep);
+      }
+
+      // prop29
+      _satellite.setVar('url', Dt3m.Utils.getURI());
+
+      setSectionning(current.fullpath);
+      return true;
+    };
+
+    // elems :
+    var clearAllEventsAndAddOne = function(selector, evtType, handle) {
+      // Reactive event propagation
+      var activePropagationInterval = setInterval(function() {
+        var $elems = $(selector);
+        _satellite.notify($elems.length + ' liens popin trouvés sur la page !', 1);
+
+        $.each($elems, function (idx, val) {
+          var $elem = $($elems[idx])
+           if (jQuery._data($(selector)[idx], "events") && jQuery._data($(selector)[idx], "events")[evtType]) {
+             // Delete previous events (Or we can't capture the click event)
+             $($elems[idx]).off(evtType);
+             _satellite.notify('Attached events deleted from ' + selector + '[' + idx + '] ', 1);
+
+             if (handle && typeof handle === 'function') {
+               // On click on a link that is calling a popin, save the popin id in a data element
+               $($elems[idx])[evtType](handle);
+             }
+
+             clearInterval(activePropagationInterval);
+             clearTimeout(watchDogPropagationInterval);
+           } else {
+             _satellite.notify('No event found on element, trying again ...', 1);
+           }
+        });
+      }, 1000);
+
+      var watchDogPropagationInterval = setTimeout(function() {
+        _satellite.notify('Event Propagation timeout stopped by watchdog !', 1);
+        clearInterval(activePropagationInterval);
+      }, 5000);
+    }
+
+    var events = (function() {
+      /*
+       * This Method is used to attach a click event to target elem(s) while
+       * handling analytics requirements (clean currently used vars, create
+       * new data elements if needed and send beacon)
+       *
+       * Notice : !! This method is only for currently available elements
+       * it will not work if your elements is not yet available on DOM tree !!
+       *
+       * @$el : jQuery elements to attach the click event to. Could be a selector string too.
+       * @dataElems : Array of objects `{ dataElement: "myDeName", value: "myVal" }`
+       * @hitData : object containing data structure and step number to retrieve in the pageDL the data to be used for the analytics hit
+       *            { dataobj: pageDL.services.monService, step: 2 }
+       * @payloadFn : function to be called inside the click event before the last line (Send Beacon);
+       * @attachToDocument: Boolean. If true, use `$(document).on('click')` method to attach the event.
+       */
+       var click = function($el, dataElems, hitData, payloadFn, attachToDocument) {
+         var attachToDocument = attachToDocument || false;
+
+         function doWork (target, callback) {
+
+           (function clearDtmVars() {
+             s.clearVars();
+             _satellite.data.customVars = {}
+           })();
+
+           function setDataElements() {
+             var res;
+
+             _satellite.notify('there are ' + dataElems.length + ' data elements to set !', 1);
+             $.each(dataElems, function(idx, val) {
+               _satellite.notify("this['dataElement']:" + dataElems[idx]['dataElement'], 1)
+               _satellite.notify("this['val']:" + dataElems[idx]['val'], 1)
+               if (!dataElems[idx]['dataElement'] || !dataElems[idx]['val']) return false;
+
+               var deName = dataElems[idx]['dataElement'];
+               var deVal = dataElems[idx]['val'];
+
+               if (deVal && Dt3m.Utils.isFunction(deVal)) {
+                  _satellite.notify('calling data element fn with arg ' + target, 1);
+                  res = deVal(target);
+               } else if ( deVal && typeof deVal === 'string'){
+                _satellite.notify('data element fn is not a function ' + Object.prototype.toString.call(deVal));
+                 res = deVal;
+               } else {
+                 _satellite.notify(new Error('The required parameter `data element value` should be a function or a string.', 5));
+                 res = "Click";
+               }
+
+               _satellite.setVar(deName, res);
+             });
+           };
+
+           function setHitData () {
+             if (typeof hitData === 'object' && typeof hitData.dataObj === 'object') {
+               if (typeof hitData.step === 'number' || typeof hitData.step === 'string') {
+                 Dt3m.Rules.setCommonDEforEBR(hitData.dataObj, hitData.step);
+               } else {
+                 _satellite.notify('HitData step argument should be a string or a number.', 1);
+               }
+               if (typeof hitData.events === 'object' && typeof hitData.events.eventState === 'string') {
+                 var cmd = hitData.events.eventState;
+                 var evtArr = hitData.events.eventArr;
+
+                 if (cmd === 'force' && evtArr && Dt3m.Utils.isArray(evtArr)) {
+                   Dt3m.Rules.setEvents(cmd, evtArr);
+                 }
+               } else {
+                 _satellite.notify(new Error('HitData events vars are badly typed !'));
+               }
+             } else {
+               _satellite.notify(new Error('Cannot set common DE.'));
+             }
+           };
+
+           function callPayloadFunction() {
+             if (payloadFn) {
+               if (Dt3m.Utils.isFunction(payloadFn)) {
+                 payloadFn.call();
+               } else {
+                 _satellite.notify(new Error('payloadFn argument is not a function.'));
+               }
+             }
+           };
+
+           function isArray(someVar) {
+             return Object.prototype.toString.call(someVar) === '[object Array]';
+           }
+
+           if (dataElems && dataElems !== 'undefined') {
+             if (!isArray(dataElems)) {
+               var dataElemsArr = [dataElems];
+               dataElems = dataElemsArr;
+             }
+
+             setDataElements();
+           } else {
+             _satellite.notify('Dt3m.Rules.events.click : dataElems is not defined, skipping setDataElements().', 1);
+           }
+
+           if (hitData && hitData !== 'undefined') {
+             setHitData();
+           } else {
+             _satellite.notify('hitData object is not defined, skipping setHitData().', 1);
+           }
+
+           if (payloadFn && payloadFn !== 'undefined') {
+              callPayloadFunction();
+           } else {
+             _satellite.notify('payloadFn is not defined, skipping callPayloadFunction().', 1);
+           }
+
+           // Launch the analytics hit
+           callback();
+         };
+
+         if ((typeof $el !== 'object' && typeof $el !== 'string')) {
+           _satellite.notify('Dt3m.Rules.events.click event returns without doing anything !', 1);
+           return false;
+         } else {
+           // Si l'element n'est pas present dans le DOM à ce moment, on attache l'event au scope du document
+           if (!attachToDocument && $el.length < 1) {
+             attachToDocument = true;
+           }
+
+           if (!attachToDocument && (typeof $el === 'object' || typeof $el === 'string')) {
+             if (typeof $el === 'string') {
+               $el = $($el);
+             }
+
+             $el.on('click', function(e) {
+               doWork(this, function() {
+                 _satellite.track('BasicPath - Send Beacon');
+               });
+             });
+           } else if (attachToDocument && (typeof $el === 'object' || typeof $el === 'string')){
+             if (typeof $el === 'object') {
+               sel = $el.selector;
+             }
+
+             $( document ).on('click', sel, function(e) {
+               doWork(this, function() {
+                 _satellite.track('BasicPath - Send Beacon');
+               });
+             });
+           }
+         }
+       };
+
+      return {
+        click: click
+      }
+    })();
+
+    var steps = (function() {
+      var blocketape = (function() {
+        // Returns direct childrens than were not empty (Where html was injected by steps)
+        var getCurrentSteps = function(sel) {
+          var currentSteps = [];
+
+          if (!$(sel).length) {
+            _satellite.notify('Dt3m.Rules.steps.blocketape.getCurrentSteps: $(selector) is not present', 3);
+            return;
+          }
+
+        	$(sel).each(function(idx, val) {
+        		if ($(this).is(':empty')) {
+                return true;
+        		}
+            currentSteps.push($(this).attr('id'));
+        	});
+
+        	return currentSteps;
+        };
+
+        return {
+          getCurrentSteps: getCurrentSteps
+        }
+      })();
+
+      return {
+        blocketape: blocketape
+      }
+    })();
+
+    return {
+      setEvents: setEvents,
+      getEventState: getEventState,
+      setCommonDEforEBR: setCommonDEforEBR,
+      clearAllEventsAndAddOne: clearAllEventsAndAddOne,
+      events: events,
+      steps: steps
+    }
+  })();
+
+  var Utils = (function() {
+    var arrayObjectIndexOf = function (arr, term, prop) {
+      for(var i = 0, len = arr.length; i < len; i++) {
+          if (arr[i][prop] === term) return i;
+      }
+      return -1;
+    };
+
+    var getObjectLength = function (obj) {
+      var size = 0, key;
+      for (key in obj) {
+          if (obj.hasOwnProperty(key)) size++;
+      }
+      return size;
+    };
+
+    var _getType = function (objToTest) {
+      var getType = {};
+      return getType.toString.call(objToTest);
+    }
+
+    var isFunction = function (objToTest) {
+      var res = _getType(objToTest);
+      return res && res === '[object Function]';
+    };
+
+    var isArray = function (objToTest) {
+      var res = _getType(objToTest);
+      return res && res === '[object Array]';
+    }
+
+    var getURI = function(hasProtocol, hasHostname, hasPathname, hasSearch) {
+      var res = '';
+      var rx = /[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/gi;
+
+      if (hasProtocol) {
+        res += location.protocol;
+      }
+
+      if (hasHostname) {
+        res += location.hostname;
+      }
+
+      if (hasPathname) {
+        res += location.pathname;
+      }
+
+      if (hasSearch) {
+        res += location.search
+      }
+
+      // If the URL is not valid, send a basic valid url
+      if (!rx.exec(res)) { res = undefined }
+      return res || location.hostname + location.pathname;
+    };
+
+    return {
+      arrayObjectIndexOf: arrayObjectIndexOf,
+      getObjectLength: getObjectLength,
+      isFunction: isFunction,
+      isArray: isArray,
+      getURI: getURI
+    };
+  })();
+
+  return {
+    User: User,
+    Server: Server,
+    Rules: Rules,
+    Utils: Utils
+  };
+})();
+
